@@ -186,6 +186,10 @@
                 <source>label.username</source>
                 <target>Gebruikersnaam</target>
             </trans-unit>
+            <trans-unit id="label.fullname">
+                <source>label.fullname</source>
+                <target>Volledige naam</target>
+            </trans-unit>
             <trans-unit id="label.password">
                 <source>label.password</source>
                 <target>Wachtwoord</target>
@@ -243,9 +247,17 @@
                 <source>menu.homepage</source>
                 <target>Beginpagina</target>
             </trans-unit>
+            <trans-unit id="menu.register">
+                <source>menu.register</source>
+                <target>Aanmelden</target>
+            </trans-unit>
             <trans-unit id="menu.admin">
                 <source>menu.admin</source>
                 <target>Beheerpaneel</target>
+            </trans-unit>
+            <trans-unit id="menu.login">
+                <source>menu.login</source>
+                <target>Inloggen</target>
             </trans-unit>
             <trans-unit id="menu.logout">
                 <source>menu.logout</source>
@@ -346,6 +358,22 @@
                 <source>help.add_user</source>
                 <target>Als u een nieuwe gebruiker wilt toevoegen, voer dan dit commando uit:</target>
             </trans-unit>
+            <trans-unit id="title.edit_user_main">
+                <source>title.edit_user_main</source>
+                <target>Hoofdgegevens aanpassen</target>
+            </trans-unit>
+            <trans-unit id="title.edit_user_meta">
+                <source>title.edit_user_meta</source>
+                 <target>Profiel uiterlijk aanpassen</target>
+            </trans-unit>
+            <trans-unit id="title.change_password">
+                <source>title.change_password</source>
+                <target>Verander wachtwoord</target>
+            </trans-unit>
+            <trans-unit id="action.change_password">
+                <source>action.change_password</source>
+                <target>Wachtwoord aanpassen</target>
+            </trans-unit>
             <trans-unit id="help.more_information">
                 <source>help.more_information</source>
                 <target><![CDATA[Voor meer informatie, bekijk de <a href="https://symfony.com/doc">Symfony documentatie</a>.]]></target>
@@ -358,6 +386,10 @@
             <trans-unit id="rss.description">
                 <source>rss.description</source>
                 <target>De meest recente berichten, gepubliceerd op De Symfony Demo blog</target>
+            </trans-unit>
+            <trans-unit id="choose_an_option">
+                <source>choose_an_option</source>
+                <target>Kies een optie</target>
             </trans-unit>
         </body>
     </file>

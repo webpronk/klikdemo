@@ -14,7 +14,13 @@
    TIP: With FOSHttpCache you can also adapt this to make it cache safe:
    https://foshttpcachebundle.readthedocs.io/en/latest/features/helpers/flash-message.html
 #}
-{% if app.request.method == 'POST' %}
+
+{# removed the check for now so we can use it after form redirects too#}
+{# https://stackoverflow.com/questions/57787296/ #}
+{# app-request-method-paremeter-in-template-always-gives-get-after-form-submit?noredirect=1#comment102008024_57787296 #}
+
+{#% if app.request.method == 'POST'%#}
+
     <div class="messages">
         {% for type, messages in app.flashes %}
             {% for message in messages %}
@@ -29,4 +35,4 @@
             {% endfor %}
         {% endfor %}
     </div>
-{% endif %}
+{#% endif %#}

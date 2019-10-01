@@ -1,6 +1,8 @@
 {% extends 'user/usermenu.html.twig' %}
 
-{% block body_id 'user_edit' %}
+{% set tab_active = 'main' %}
+
+{% block body_id 'user_edit_profile' %}
 
 {% block main %}
     <h1>{{ 'title.edit_user_main'|trans }}</h1>

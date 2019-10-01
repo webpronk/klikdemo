@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block submenu %}
+    <div >
+        <ul class="nav nav-tabs">
+            <li class="nav {% if tab_active == 'main' %} active {% endif %}">
+                <a href="{{ path('user_edit_main') }}">
+                    <i class="fa fa-edit" aria-hidden="true"></i> {{ 'menu.user_edit_main'|trans }}
+                </a>
+            </li>
+            <li class="nav {% if tab_active == 'meta' %} active{% endif %}">
+                <a  href="{{ path('user_edit_meta') }}">
+                    <i class="fa fa-edit" aria-hidden="true"></i> {{ 'menu.user_edit_meta'|trans }}
+                </a>
+            </li>
+            <li class="nav {% if tab_active == 'album' %} active{% endif %}">
+                <a  href="{{ path('user_edit_album') }}">
+                    <i class="fa fa-edit" aria-hidden="true"></i> {{ 'menu.user_edit_album'|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

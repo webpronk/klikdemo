@@ -31,48 +31,50 @@ use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
  *
  * @author Romain Monteil <monteil.romain@gmail.com>
  */
-class UserController extends AbstractController
+class ProfielController extends AbstractController
 {
-    /**
-     * @Route("/edit_main", methods={"GET", "POST"}, name="user_edit_main")
-     */
-    public function edit_main(Request $request): Response
-    {
-        $user = $this->getUser();
 
-        $form = $this->createForm(UserType::class, $user);
+    /**
+     * @Route("/edit_profile_meta", methods={"GET", "POST"}, name="user_edit_meta")
+     */
+    public function edit_profile_meta(Request $request): Response
+    {
+
+        $profile = $this->getProfile();
+        $form = $this->createForm(ProfielType::class, $profile);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $this->getDoctrine()->getManager()->flush();
+
+            $entityManager = $this->getDoctrine()->getManager();
+            $entityManager->persist($profile);
+            $entityManager->flush();
 
             $this->addFlash('success', 'user.updated_successfully');
 
-            return $this->redirectToRoute('user_edit_main');
+            return $this->redirectToRoute('user_edit_meta');
         }
 
-        return $this->render('user/edit_main.html.twig', [
-            'user' => $user,
+        return $this->render('user/edit_meta.html.twig', [
+            'profile' => $profile,
             'form' => $form->createView(),
         ]);
     }
-
 
     /**
      *
      * @return object
      */
-    protected function getProfiel()
+    protected function getProfile()
     {
         $user = $this->getUser();
         $profielId = $user->getId();
 
-        $entityManager = $this->getDoctrine()->getManager();
+        $profile = $this->getDoctrine()
+            ->getRepository(Profiel::class)
+            ->findOneBy(['user' => $profielId]);
 
-
-        $profiel = $entityManager->getRepository('ProfielRepository')->find($profielId);
-
-        return $profiel;
+        return $profile;
     }
 
     /**

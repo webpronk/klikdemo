@@ -32,3 +32,8 @@ services:
     # 'arguments' key and define the arguments just below the service class
     App\EventSubscriber\CommentNotificationSubscriber:
         $sender: '%app.notifications.email_sender%'
+
+    # Image folder
+    #App\Service\FileUploader:
+    #    arguments:
+    #        $targetDirectory: '../public/pictures/'

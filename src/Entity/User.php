@@ -12,6 +12,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
@@ -27,7 +28,13 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @author Ryan Weaver <weaverryan@gmail.com>
  * @author Javier Eguiluz <javier.eguiluz@gmail.com>
+ * @UniqueEntity(fields={"username"}, message="There is already an account with this username")
  */
+
+/*
+* @UniqueEntity(fields={"email11"}, groups={"registration"})
+* @UniqueEntity(fields={"username222"}, groups={"registration"})
+*/
 class User implements UserInterface, \Serializable
 {
     /**
@@ -42,10 +49,10 @@ class User implements UserInterface, \Serializable
     /**
      * @var string
      *
-     * @ORM\Column(type="string")
-     * @Assert\NotBlank()
+     * @ORM\Column(type="string", unique=false)
      */
-    private $fullName;
+    private $male_female;
+
 
     /**
      * @var string
@@ -60,6 +67,7 @@ class User implements UserInterface, \Serializable
      * @var string
      *
      * @ORM\Column(type="string", unique=true)
+     * @Assert\NotBlank()
      * @Assert\Email()
      */
     private $email;
@@ -71,6 +79,8 @@ class User implements UserInterface, \Serializable
      */
     private $password;
 
+
+
     /**
      * @var array
      *
@@ -78,19 +88,30 @@ class User implements UserInterface, \Serializable
      */
     private $roles = [];
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Land")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $land;
+
+
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function setFullName(string $fullName): void
+    /**
+     * @param string $geslacht
+     */
+    public function setMalefemale(string $male_female): void
     {
-        $this->fullName = $fullName;
+        $this->male_female = $male_female;
+        //$this->male_female = 'V';
     }
 
-    public function getFullName(): ?string
+    public function getMaleFemale(): ?string
     {
-        return $this->fullName;
+        return $this->male_female;
     }
 
     public function getUsername(): ?string
@@ -113,7 +134,24 @@ class User implements UserInterface, \Serializable
         $this->email = $email;
     }
 
+    public function getLand(): ?land
+    {
+        return $this->land;
+    }
+
+    public function setLand(?land $land): self
+    {
+        $this->land = $land;
+
+        return $this;
+    }
+
     public function getPassword(): ?string
+    {
+        return $this->password;
+    }
+
+    public function getPlainPassword(): ?string
     {
         return $this->password;
     }
@@ -122,6 +160,11 @@ class User implements UserInterface, \Serializable
     {
         $this->password = $password;
     }
+
+    /*public function setPlainPassword(string $password): void
+    {
+        $this->password = $password;
+    }*/
 
     /**
      * Returns the roles or permissions granted to the user for security.
@@ -185,4 +228,8 @@ class User implements UserInterface, \Serializable
         // add $this->salt too if you don't use Bcrypt or Argon2i
         [$this->id, $this->username, $this->password] = unserialize($serialized, ['allowed_classes' => false]);
     }
+
+
+
+
 }

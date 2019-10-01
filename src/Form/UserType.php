@@ -12,8 +12,13 @@
 namespace App\Form;
 
 use App\Entity\User;
+use App\Entity\Land;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
+use Symfony\Component\Form\Extension\Core\Type\PasswordType;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -38,18 +43,36 @@ class UserType extends AbstractType
         // server-side validation errors from the browser. To temporarily disable
         // this validation, set the 'required' attribute to 'false':
         // $builder->add('title', null, ['required' => false, ...]);
+       
 
         $builder
+            ->add('male_female', ChoiceType::class, array(
+                'choices' => array(
+                    'Man' => 'M',
+                    'Vrouw' => 'V',
+                ),
+                'label' => 'Geslacht',
+                'multiple'=>false,
+                'expanded'=>true,
+            ))
             ->add('username', TextType::class, [
                 'label' => 'label.username',
                 'disabled' => true,
             ])
-            ->add('fullName', TextType::class, [
-                'label' => 'label.fullname',
-            ])
+            //->add('fullName', TextType::class, [
+            //    'label' => 'label.fullname',
+            //])
             ->add('email', EmailType::class, [
                 'label' => 'label.email',
             ])
+            ->add('land', EntityType::class, [
+                'class' => Land::class,
+            ])
+           /* ->add('plainPassword', RepeatedType::class, array(
+                'type' => PasswordType::class,
+                'first_options'  => array('label' => 'Password'),
+                'second_options' => array('label' => 'Repeat Password'),
+            ))*/
         ;
     }
 

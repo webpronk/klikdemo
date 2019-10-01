@@ -1,0 +1,75 @@
+{% extends 'user/usermenu.html.twig' %}
+
+{% set tab_active = 'meta' %}
+
+
+{% block main %}
+    <h1>{{ 'title.edit_user_meta'|trans }}</h1>
+    <div class="form-group col-md-12">
+        <div class="row">
+            {{ form_start(form, {'method': 'POST'}) }}
+
+
+            {{ form_widget(form) }}
+
+
+            <button type="submit" class="btn btn-primary">
+                <i class="fa fa-save" aria-hidden="true"></i> {{ 'action.save'|trans }}
+            </button>
+
+            {{ form_end(form) }}
+            {#{{ form_widget(form.provincie_id, {'attr': {'class': 'custom-select'}}) }}#}
+        </div>
+    </div>
+
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+    <script>
+        var $provincie = $('#profiel_provincie');
+        // When provincie gets selected ...
+
+        $provincie.change(function() {
+            // ... retrieve the corresponding form.
+            var $form = $(this).closest('form');
+            // Simulate form data, but only include the selected provincie value.
+            var data = {};
+            data[$provincie.attr('name')] = $provincie.val();
+            // Submit data via AJAX to the form's action path.
+            $.ajax({
+                url : $form.attr('action'),
+                type: $form.attr('method'),
+                data : data,
+                success: function(html) {
+                    // Replace current position field ...
+                    $('#profiel_plaats').replaceWith(
+                            // ... with the returned one from the AJAX response.
+                            $(html).find('#profiel_plaats')
+                    );
+                    // Position field now displays the appropriate positions.
+                }
+            });
+        });
+    </script>
+
+
+{% endblock %}
+
+{% block sidebar %}
+    <div class="section">
+        <a href="{{ path('user_change_password') }}" class="btn btn-lg btn-block btn-danger">
+            <i class="fa fa-lock" aria-hidden="true"></i> {{ 'action.change_password'|trans }}
+        </a>
+    </div>
+
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+
+
+
+{% endblock %}
+
+

@@ -15,10 +15,13 @@ Encore
     .addEntry('js/login', './assets/js/login.js')
     .addEntry('js/admin', './assets/js/admin.js')
     .addEntry('js/search', './assets/js/search.js')
+    .addEntry('profile_album_js', './assets/js/blueimp.js')
+    .addStyleEntry('css/album_css', ['./assets/scss/blueimp.scss'])
     .addStyleEntry('css/app', ['./assets/scss/app.scss'])
     .addStyleEntry('css/admin', ['./assets/scss/admin.scss'])
     .splitEntryChunks()
     .enableSingleRuntimeChunk()
+
 ;
 
 module.exports = Encore.getWebpackConfig();

@@ -283,9 +283,21 @@
                 <source>menu.admin</source>
                 <target>Backend</target>
             </trans-unit>
-            <trans-unit id="menu.user">
-                <source>menu.user</source>
-                <target>Account</target>
+            <trans-unit id="menu.user_edit_main">
+                <source>menu.user_edit_main</source>
+                <target>Basis gegevens</target>
+            </trans-unit>
+             <trans-unit id="menu.user_edit">
+                <source>menu.user_edit</source>
+                <target>Mijn profiel</target>
+            </trans-unit>
+             <trans-unit id="menu.user_edit_meta">
+                <source>menu.user_edit_meta</source>
+                <target>Profiel</target>
+            </trans-unit>
+            <trans-unit id="menu.user_edit_album">
+                <source>menu.user_edit_album</source>
+                <target>Foto album</target>
             </trans-unit>
             <trans-unit id="menu.logout">
                 <source>menu.logout</source>
@@ -343,7 +355,7 @@
 
             <trans-unit id="user.updated_successfully">
                 <source>user.updated_successfully</source>
-                <target>User updated successfully!</target>
+                <target>Jouw info met succes opgeslagen!</target>
             </trans-unit>
 
             <trans-unit id="notification.comment_created">

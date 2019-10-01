@@ -104,6 +104,8 @@ class BlogController extends AbstractController
             $em->persist($comment);
             $em->flush();
 
+            $this->addFlash('success', 'user.updated_successfully');
+
             // When triggering an event, you can optionally pass some information.
             // For simple applications, use the GenericEvent object provided by Symfony
             // to pass some PHP variables. For more complex applications, define your

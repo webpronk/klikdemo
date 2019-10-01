@@ -1,4 +1,7 @@
 {
+    "blueimp/jquery-file-upload": {
+        "version": "v10.2.0"
+    },
     "composer/ca-bundle": {
         "version": "1.x-dev"
     },
@@ -119,6 +122,9 @@
     "monolog/monolog": {
         "version": "1.x-dev"
     },
+    "nikic/php-parser": {
+        "version": "v4.2.0"
+    },
     "ocramius/proxy-manager": {
         "version": "2.1.x-dev"
     },
@@ -160,6 +166,9 @@
             "version": "4.0",
             "ref": "421933bf8f0e75546ac8e00cb3eb12904fa2ac1a"
         }
+    },
+    "snapappointments/bootstrap-select": {
+        "version": "v1.13.10"
     },
     "swiftmailer/swiftmailer": {
         "version": "6.1-dev"
@@ -260,6 +269,15 @@
     "symfony/intl": {
         "version": "4.2-dev"
     },
+    "symfony/maker-bundle": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
+    },
     "symfony/monolog-bridge": {
         "version": "4.2-dev"
     },
@@ -287,8 +305,14 @@
     "symfony/polyfill-ctype": {
         "version": "1.9-dev"
     },
+    "symfony/polyfill-iconv": {
+        "version": "v1.12.0"
+    },
     "symfony/polyfill-intl-icu": {
         "version": "1.9-dev"
+    },
+    "symfony/polyfill-intl-idn": {
+        "version": "v1.12.0"
     },
     "symfony/polyfill-mbstring": {
         "version": "1.9-dev"
@@ -412,6 +436,9 @@
     },
     "symfony/yaml": {
         "version": "4.2-dev"
+    },
+    "twbs/bootstrap": {
+        "version": "v4.0.0-beta.2"
     },
     "twig/extensions": {
         "version": "1.0",

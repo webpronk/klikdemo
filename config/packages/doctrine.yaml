@@ -9,6 +9,8 @@ doctrine:
         driver: 'pdo_sqlite'
         server_version: '3.15'
         charset: utf8mb4
+        mapping_types:
+            enum: string
 
         url: '%env(resolve:DATABASE_URL)%'
     orm:
