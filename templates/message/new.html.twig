@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block body_id 'message_send_new' %}
+
+{% block main %}
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="container ">
+                <div class="row fixedheight">
+                    <div class="span3 offset4">
+                        <img class="img-responsive float-left mr-4 rounded" src="{{ mainPicture.bignailUrl }}" width="75px"/>
+                    </div><!-- /span -->
+                    <div class="bottomaligned">
+                        <div class="span1">
+                            <h3>{{ receiver.username }}</h3>
+                        </div><!-- /span -->
+
+                    </div>
+                </div><!-- /row -->
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 mb-4">
+            {{ form_start(messageForm) }}
+
+            {{ form_end(messageForm) }}
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+
+{% endblock %}
+
+{% block sidebar %}
+
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}

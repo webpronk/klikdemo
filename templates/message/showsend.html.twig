@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block body_id 'message_show' %}
+
+{% block main %}
+
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 well">
+            <div class="clearfix">
+                <img class="img-responsive float-left mr-4 rounded" src="{{ profilePicsOfChat[messageForm.vars.value.sender.id].bignailUrl }}" width="75px"/>
+                <p>
+                    {{ messageForm.vars.value.sender.username }}<br/>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ">
+                    <span class="float-right small"><i class="fa fa-calendar"></i> {{ messageForm.vars.value.creationDate|date('d-m-Y H:i') }}</span>
+                    <br />
+                    <br />
+                    {{ messageForm.vars.value.messageBody }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 ">
+            {{ include('message/history.html.twig') }}
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+{% block sidebar %}
+
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}

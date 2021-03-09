@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block submenu %}
+    <div >
+        <ul class="nav nav-tabs">
+
+            <li class="nav  active">
+                <a  href="{{ path('user_show_profile') }}">
+                    <i class="fa fa-user" aria-hidden="true"></i> {{ user.username }}
+                </a>
+            </li>
+            <li class="nav  active">
+                <a  href="{{ path('user_show_profile') }}">
+                    <i class="fa fa-mail" aria-hidden="true"></i> {{ 'menu.send_mail'|trans }}
+                </a>
+            </li>
+
+        </ul>
+    </div>
+{% endblock %}

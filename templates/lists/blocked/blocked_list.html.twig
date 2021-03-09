@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block submenu %}
+{% endblock %}
+
+
+{% block body_id 'blocked_list' %}
+
+{% block main %}
+
+<div class="container body-container">
+    {% if blockeds %}
+        <div class="row">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 mb-4">
+                <h4>Geblokkeerd</h4>
+            </div>
+        </div>
+    {% endif %}
+    <div class="row blockeds">
+
+    {% for blocked in blockeds %}
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4 mb-4">
+                {% set user  = blocked %}
+               {%  include('lists/list_profile_template.html.twig') %}
+            </div>
+            <div class="col-md-4">
+            </div>
+
+    {% else %}
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 card-body">
+            <div class="card-text">{{ 'database.no_blockeds_found'|trans }}</div>
+        </div>
+        <div class="col-md-4">
+        </div>
+
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+

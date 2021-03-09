@@ -1,0 +1,174 @@
+<div class="row mt-4">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <strong>
+                    Gebruikersnaam
+                </strong>
+            </div>
+            <div class="col-sm-4">
+                {{ user.username }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <strong>
+                    Woonplaats
+                </strong>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.provincie) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.provincie }}
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.plaats) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.plaats }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.status) }}</strong>
+            </div>
+            <div class="col-sm-4">
+                {{ form.vars.value.status }}
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <strong>Voorkeur</strong>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.opzoek) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.opzoek }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4">
+                <strong>Kinderen</strong>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.kinderen) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.kinderen }}
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.kinderwens) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.kinderwens }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4">
+                <strong>Gewoontes</strong>
+            </label>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.roken) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.roken }}
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.drugs) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.drugs }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>Eten/drinken</strong>
+            </label>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.drinken) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.drinken }}
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.vegetarisch) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.vegetarisch }}
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>{{ form_label(form.sport) }}</strong>
+            </label>
+            <div class="col-sm-4">
+                {{ form.vars.value.sport }}
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>Uiterlijk</strong>
+            </label>
+            <div class="col-sm-4">
+                <strong>{{ form_label(form.lengte) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.lengte }}
+                </div>
+            </div>
+            <div class="control-label col-sm-4">
+                <strong>{{ form_label(form.bouw) }}</strong>
+                <div class="well">
+                    {{ form.vars.value.bouw }}
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>{{ form_label(form.haarkleur) }}</strong>
+            </label>
+            <div class="col-sm-4">
+                {{ form.vars.value.haarkleur }}
+            </div>
+        </div>
+
+
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>{{ form_label(form.afkomst) }}</strong>
+            </label>
+            <div class="col-sm-4">
+                {{ form.vars.value.afkomst }}
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>{{ form_label(form.religie) }}</strong>
+            </label>
+            <div class="col-sm-4">
+                {{ form.vars.value.religie }}
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="control-label col-sm-4">
+                <strong>{{ form_label(form.opleiding) }}</strong>
+            </label>
+            <div class="col-sm-4">
+                {{ form.vars.value.opleiding }}
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-2">
+
+    </div>
+</div>

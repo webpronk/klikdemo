@@ -289,15 +289,19 @@
             </trans-unit>
              <trans-unit id="menu.user_edit">
                 <source>menu.user_edit</source>
-                <target>Mijn profiel</target>
+                <target>Profiel wijzigen</target>
             </trans-unit>
              <trans-unit id="menu.user_edit_meta">
                 <source>menu.user_edit_meta</source>
-                <target>Profiel</target>
+                <target>Profiel aanpassen</target>
             </trans-unit>
             <trans-unit id="menu.user_edit_album">
                 <source>menu.user_edit_album</source>
                 <target>Foto album</target>
+            </trans-unit>
+            <trans-unit id="menu.user_show_profile">
+                <source>menu.user_show_profile</source>
+                <target>Profiel tonen</target>
             </trans-unit>
             <trans-unit id="menu.logout">
                 <source>menu.logout</source>

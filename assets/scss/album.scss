@@ -1,0 +1,21 @@
+@import "~blueimp-gallery/css/blueimp-gallery.css";
+@import "~blueimp-file-upload/css/jquery.fileupload.css";
+/*@import "~blueimp-file-upload/css/jquery.fileupload-noscript.css";*/
+@import "~blueimp-file-upload/css/jquery.fileupload-ui.css";
+/*@import "~blueimp-file-upload/css/jquery.fileupload-ui-noscript.css";*/
+
+.fileupload-processing
+{
+
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(/public/build/images/loading.05992d34.gif) center no-repeat;
+    background-size: contain;
+
+}
+/* new class for profiel pic */
+.border {
+    outline: thin solid darkgray;
+}
+

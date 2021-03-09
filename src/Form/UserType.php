@@ -13,6 +13,8 @@ namespace App\Form;
 
 use App\Entity\User;
 use App\Entity\Land;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -48,8 +50,8 @@ class UserType extends AbstractType
         $builder
             ->add('male_female', ChoiceType::class, array(
                 'choices' => array(
-                    'Man' => 'M',
-                    'Vrouw' => 'V',
+                    ' Man' => 'M',
+                    ' Vrouw' => 'V',
                 ),
                 'label' => 'Geslacht',
                 'multiple'=>false,
@@ -67,6 +69,10 @@ class UserType extends AbstractType
             ])
             ->add('land', EntityType::class, [
                 'class' => Land::class,
+            ])
+            ->add('geboortedatum', BirthdayType::class,[
+                'label' => 'label.geboortedatum',
+                'format' => 'dd-MMMM-yyyy',
             ])
            /* ->add('plainPassword', RepeatedType::class, array(
                 'type' => PasswordType::class,

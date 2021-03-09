@@ -1,0 +1,42 @@
+<p>
+<hr />
+</p>
+
+{% set prevUserId = 0 %}
+{% set Offset = 0 %}
+
+{% for message in messageHistoryList %}
+
+    {#  Remember sender is changing for each cyle in the loop although table tells a different story #}
+
+    {% if message.sender.id != prevUserId %}
+        {% set Offset = Offset + 1 %}
+    {% endif %}
+    {% set prevUserId = message.sender.id %}
+
+    <div class="row offset-md-{{ Offset }} mb-3">
+
+            <div class="card " style="width:20em">
+                <div class="card-header">
+                    <div class="span3 offset4">
+                        <img class="img-responsive float-left mr-4 rounded" src="{{ profilePicsOfChat[message.sender.id].bignailUrl }}" width="75px"/>
+                    </div><!-- /span -->
+                    <div class="bottomaligned">
+                        <div class="span1">
+                            <i class="fa fa-calendar"></i> {{ message.creationDate|date('d-m-Y H:i') }}
+                        </div><!-- /span -->
+                        <div class="span1">
+                            <h5>{{ message.sender.username }}</h5>
+                        </div><!-- /span -->
+                    </div>
+                </div><!-- /row -->
+                <div class="card-body">
+                    <div class="card-text">
+                        {{ message.messageBody }}
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+{% endfor %}

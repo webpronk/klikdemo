@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block submenu %}
+{% endblock %}
+{% block body_id 'message_send_success' %}
+
+{% block main %}
+    {#Flash message is enough#}
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <a href="{{ path('message_new_list') }}" class="btn btn-primary ">
+            <i class="fa fa-envelope" aria-hidden="true"></i> Terug naar berichten
+        </a>
+    </div>
+{% endblock %}

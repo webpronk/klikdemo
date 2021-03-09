@@ -3,14 +3,17 @@
 // see https://github.com/thomaspark/bootswatch/issues/55#issuecomment-298093182
 $web-font-path: 'data:text/css;base64,';
 
-@import '~bootstrap/dist/css/bootstrap.css';
-@import '~bootstrap-vue/dist/bootstrap-vue.css';
+//@import '~bootstrap/dist/css/bootstrap.css';
 
-@import "~bootswatch/flatly/variables";
-@import "~bootstrap-sass/assets/stylesheets/bootstrap";
-@import "~bootswatch/flatly/bootswatch";
-@import "~font-awesome/scss/font-awesome.scss";
-@import "~highlight.js/styles/solarized-light.css";
+//@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+@import "~bootswatch/dist/flatly/_variables";
+// We need this for bootswatch
+@import '~bootstrap/scss/bootstrap';
+//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootswatch/dist/flatly/_bootswatch";
+@import '~@fortawesome/fontawesome-free/css/all.css';
+//@import "~highlight.js/styles/solarized-light.css";
 
 // pick the Lato fonts individually to avoid importing the entire font family
 @import '~lato-font/scss/public-api';
@@ -74,9 +77,11 @@ header .locales a {
   padding-right: 10px
 }
 
+
+
 .body-container {
   flex: 1;
-  /* needed to prevent pages with a very small height and browsers not supporting flex */
+  //!* needed to prevent pages with a very small height and browsers not supporting flex *!
   min-height: 600px
 }
 
@@ -334,4 +339,9 @@ body#blog_search article.post {
 body#blog_search .post-metadata {
   font-size: 16px;
   margin-bottom: 8px;
+}
+a.disabled{
+  pointer-events: none;
+  cursor: default;
+  color: #6d8082;
 }

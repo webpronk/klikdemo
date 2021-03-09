@@ -1,0 +1,150 @@
+{#
+   This is the base template used as the application layout which contains the
+   common elements and decorates all the other templates.
+   See https://symfony.com/doc/current/book/templating.html#template-inheritance-and-layouts
+#}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>{% block title %}Klik2Match.nl{% endblock %}</title>
+        <link rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
+        {% block stylesheets %}
+            {#<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">#}
+            {{ encore_entry_link_tags('css/app') }}
+        {% endblock %}
+        {% block extracss %}
+
+        {% endblock %}
+        <!-- ugly hack for bootstrap selectboxes that screw up the selections-->
+        <style>
+           /* .form-control {
+                padding: .6rem .8rem !important;
+                border: 2px solid #ced4da !important;
+                transition: none !important;
+            }
+            select.form-control{
+                height: auto !important;
+                padding: .6rem .8rem calc(.6rem + 1px) .8rem !important;
+            }*/
+
+        </style>
+
+
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+
+    <body id="{% block body_id %}{% endblock %}">
+        <div class="container">
+test test test
+        {% block header %}
+            {#<header>#}
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Klik2match</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('singles_index') }}">{{ 'menu.singles'|trans }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('message_new_list') }}">{{ 'menu.messages'|trans }}</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                {{ 'menu.user_edit_main'|trans }}
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ path('user_show_profile') }}">{{ 'menu.user_show_profile'|trans }}</a>
+                                <a class="dropdown-item" href="{{ path('user_edit_profile') }}">{{ 'menu.user_edit_meta'|trans }}</a>
+                                <a class="dropdown-item" href="{{ path('user_edit_album') }}">{{ 'menu.user_edit_album'|trans }}</a>
+                                <a class="dropdown-item" href="{{ path('user_edit_main') }}">{{ 'menu.user_edit_main'|trans }}</a>
+                                <a class="dropdown-item" href="{{ path('favo_list') }}">{{ 'menu.favo_list'|trans }}</a>
+                                <a class="dropdown-item" href="{{ path('blocked_list') }}">{{ 'menu.blocked_list'|trans }}</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" e_menuaria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+            {#</header>#}
+
+        {% endblock %}
+
+
+
+            {% block submenu %}
+                submenu base
+            {% endblock %}
+
+            {% block body %}
+
+                <div class="row">
+                    <div id="main" class="col-md-12">
+                        {{ include('default/_flash_messages.html.twig') }}
+
+                        {% block main %}
+                        {% endblock %}
+                    </div>
+
+
+                </div>
+            {% endblock %}
+        </div>
+
+
+
+        {% block footer %}
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div id="footer-copyright" class="col-md-6">
+                            <p>&copy; {{ 'now'|date('Y') }} - The Symfony Project</p>
+                            <p>{{ 'mit_license'|trans }}</p>
+                        </div>
+                        <div id="footer-resources" class="col-md-6">
+                            <p>
+                                <a href="https://twitter.com/symfony" title="Symfony Twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/SensioLabs" title="SensioLabs Facebook">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://symfony.com/blog/" title="Symfony Blog">
+                                    <i class="fa fa-rss" aria-hidden="true"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+
+        {# it's not mandatory to set the timezone in localizeddate(). This is done to
+           avoid errors when the 'intl' PHP extension is not available and the application
+           is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
+        <!-- Page rendered on {{ 'now'|localizeddate('long', 'long', null, 'UTC') }} -->
+
+        {% block javascripts %}
+
+           {{ encore_entry_script_tags('js/app') }}
+
+        {% endblock %}
+    </body>
+</html>

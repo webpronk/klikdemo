@@ -20,7 +20,8 @@ use App\Entity\BeheerReligie;
 use App\Entity\BeheerOpleiding;
 
 
-use App\Entity\Profiel;
+//use App\Entity\User;
+use App\Entity\Meta;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Security\Core\Security;
 
@@ -45,7 +46,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
  *
  * @author Romain Monteil <monteil.romain@gmail.com>
  */
-class ProfielType extends AbstractType
+class MetaType extends AbstractType
 {
 
 
@@ -60,8 +61,6 @@ class ProfielType extends AbstractType
         $this->security = $security;
 
     }
-
-
 
     /**
      * {@inheritdoc}
@@ -84,6 +83,7 @@ class ProfielType extends AbstractType
         $builder
             ->add('provincie', EntityType::class, [
                     'class' => Provincie::class,
+                    'placeholder' => 'Maak een keuze',
                     'choices' => $this->provincieRepository->findProvinceLand($land_id),
                 ]
             );
@@ -94,11 +94,15 @@ class ProfielType extends AbstractType
 
             $form->add('plaats', EntityType::class, [
                 'class' => Plaats::class,
-                'placeholder' => '',
+                'placeholder' => 'Maak een keuze',
                 'choices' => $plaats,
             ])
-                ->add('status', EntityType::class, ['class'=> BeheerStatus::class])
+                ->add('status', EntityType::class, [
+                    'placeholder' => 'Maak een keuze',
+                    'class'=> BeheerStatus::class]
+                )
                 ->add('opzoek', ChoiceType::class, [
+                'placeholder' => 'Maak een keuze',
                 'choices' => array(
                     'Mannen' => 'Man',
                     'Vrouwen' => 'Vrouw',
@@ -106,26 +110,32 @@ class ProfielType extends AbstractType
                 ),
                 'label' => 'Ik val op',
                 'expanded'=>false,
+                 'required' => true
                 ])
                 ->add('kinderwens', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
                         'Ja' => 'Ja',
                         'Nee' => 'Nee',
                         'Misschien' => 'Misschien',
                     ),
+                    'empty_data' => '',
                     'label' => 'Heb je een kinderwens',
                     'expanded'=>false,
                 ])
                 ->add('kinderen', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
                         'Ja' => 'Ja',
                         'Nee' => 'Nee',
                         'Volwassen' => 'Vol',
                     ),
+                    'empty_data' => '',
                     'label' => 'Heb je kinderen nu',
                     'expanded'=>false,
                 ])
                 ->add('roken', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
                         'Ja' => 'Ja',
                         'Nee' => 'Nee',
@@ -135,6 +145,7 @@ class ProfielType extends AbstractType
                     'expanded'=>false,
                 ])
                 ->add('drugs', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
                         'Vaak' => 'Vaak',
                         'Nee' => 'Nee',
@@ -144,6 +155,7 @@ class ProfielType extends AbstractType
                     'expanded'=>false,
                 ])
                 ->add('drinken', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
                         'Ja' => 'Ja',
                         'Nee' => 'Nee',
@@ -153,6 +165,7 @@ class ProfielType extends AbstractType
                     'expanded'=>false,
                 ])
                 ->add('vegetarisch', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
                         'Nee' => 'Nee',
                         'Ja' => 'Ja',
@@ -162,8 +175,9 @@ class ProfielType extends AbstractType
                     'expanded'=>false,
                 ])
                 ->add('lengte', ChoiceType::class, [
+                    'placeholder' => 'Maak een keuze',
                     'choices' => array(
-                        '<140cm'=> '<140cm',
+                    '<140cm'=> '<140cm',
                     '140-150cm' => '140-150cm',
                     '150-160cm' => '150-160cm',
                     '160-170cm' => '160-170cm',
@@ -181,7 +195,8 @@ class ProfielType extends AbstractType
                 ->add('sport', EntityType::class, ['class'=> BeheerSport::class])
                 ->add('haarkleur', EntityType::class, ['class'=> BeheerHaarkleur::class])
                 ->add('religie', EntityType::class, ['class'=> BeheerReligie::class])
-                ->add('opleiding', EntityType::class, ['class'=> BeheerOpleiding::class]);
+                ->add('opleiding', EntityType::class, ['class'=> BeheerOpleiding::class])
+            ;
          };
 
         $builder->addEventListener(
@@ -219,7 +234,7 @@ class ProfielType extends AbstractType
     public function configureOptions(OptionsResolver $resolver): void
     {
         $resolver->setDefaults([
-            'data_class' => Profiel::class,
+            'data_class' => Meta::class,
         ]);
     }
 }

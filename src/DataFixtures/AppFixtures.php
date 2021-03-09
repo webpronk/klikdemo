@@ -12,6 +12,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Comment;
+use App\Entity\Land;
 use App\Entity\Post;
 use App\Entity\Tag;
 use App\Entity\User;
@@ -20,13 +21,17 @@ use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+use App\Repository\LandRepository;
+
 class AppFixtures extends Fixture
 {
     private $passwordEncoder;
 
-    public function __construct(UserPasswordEncoderInterface $passwordEncoder)
+    public function __construct(UserPasswordEncoderInterface $passwordEncoder, LandRepository $LandRepository)
     {
         $this->passwordEncoder = $passwordEncoder;
+
+        $this->LandRepository = $LandRepository;
     }
 
     public function load(ObjectManager $manager)
@@ -40,8 +45,11 @@ class AppFixtures extends Fixture
     {
         foreach ($this->getUserData() as [$fullname, $username, $password, $email, $roles]) {
             $user = new User();
-            $user->setFullName($fullname);
+            //$user->setFullName($fullname);
             $user->setUsername($username);
+            $user->setMalefemale('M');
+            $land = $this->LandRepository->findOneBy(['id'=>1]);
+            $user->setLand($land);
             $user->setPassword($this->passwordEncoder->encodePassword($user, $password));
             $user->setEmail($email);
             $user->setRoles($roles);

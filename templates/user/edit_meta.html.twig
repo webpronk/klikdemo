@@ -2,181 +2,115 @@
 
 {% set tab_active = 'meta' %}
 
-
 {% block main %}
-    <br />
-    <div class="form-group col-md-12">
-        <div class="row">
-            {{ form_start(form, {'method': 'POST'}) }}
 
+    <div class="row" >
+        <div class="col-md-4">
 
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
-                    Woonplaats
-                </label>
-                <div class="col-sm-4">
+        </div>
+        <div class="col-md-4">
+        {{ form_start(form, {'method': 'POST'}) }}
+
+            <fieldset>
+                <legend>Gegevens</legend>
+                <div class="form-group">
                     {{ form_label(form.provincie) }}
-                    <div class="well">
-                        {{ form_widget(form.provincie) }}
-                    </div>
+                    {{ form_widget(form.provincie) }}
                 </div>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.plaats) }}
-                    <div class="well">
-                        {{ form_widget(form.plaats) }}
-                    </div>
+                    {{ form_widget(form.plaats) }}
                 </div>
-            </div>
-
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
+                <div class="form-group">
                     {{ form_label(form.status) }}
-                </label>
-                <div class="col-sm-4">
                     {{ form_widget(form.status) }}
                 </div>
-            </div>
-
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
-                    Voorkeur
-                </label>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.opzoek) }}
-                    <div class="well">
-                        {{ form_widget(form.opzoek) }}
-                    </div>
+                    {{ form_widget(form.opzoek) }}
                 </div>
-            </div>
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
-                    Kinderen
-                </label>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.kinderen) }}
-                    <div class="well">
-                        {{ form_widget(form.kinderen) }}
-                    </div>
+                    {{ form_widget(form.kinderen) }}
                 </div>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.kinderwens) }}
-                    <div class="well">
-                        {{ form_widget(form.kinderwens) }}
-                    </div>
+                    {{ form_widget(form.kinderwens) }}
                 </div>
-            </div>
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
-                    Gewoontes
-                </label>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.roken) }}
-                    <div class="well">
-                        {{ form_widget(form.roken) }}
-                    </div>
+                    {{ form_widget(form.roken) }}
                 </div>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.drugs) }}
-                    <div class="well">
-                        {{ form_widget(form.drugs) }}
-                    </div>
+                    {{ form_widget(form.drugs) }}
                 </div>
-            </div>
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
-                    Eten/drinken
-                </label>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.drinken) }}
-                    <div class="well">
-                        {{ form_widget(form.drinken) }}
-                    </div>
+                    {{ form_widget(form.drinken) }}
                 </div>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.vegetarisch) }}
-                    <div class="well">
-                        {{ form_widget(form.vegetarisch) }}
-                    </div>
+                    {{ form_widget(form.vegetarisch) }}
                 </div>
-            </div>
-
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
+                <div class="form-group">
                     {{ form_label(form.sport) }}
-                </label>
-                <div class="col-sm-4">
                     {{ form_widget(form.sport) }}
                 </div>
-            </div>
-
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
-                    Uiterlijk
-                </label>
-                <div class="col-sm-3">
+                <div class="form-group">
                     {{ form_label(form.lengte) }}
-                    <div class="well">
-                        {{ form_widget(form.lengte) }}
-                    </div>
+                    {{ form_widget(form.lengte) }}
                 </div>
-                <div class="col-sm-3">
+                <div class="form-group">
                     {{ form_label(form.bouw) }}
-                    <div class="well">
-                        {{ form_widget(form.bouw) }}
-                    </div>
+                    {{ form_widget(form.bouw) }}
                 </div>
-                <div class="col-sm-4">
+                <div class="form-group">
                     {{ form_label(form.haarkleur) }}
-                    <div class="well">
-                        {{ form_widget(form.haarkleur) }}
-                    </div>
+                    {{ form_widget(form.haarkleur) }}
                 </div>
-            </div>
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
+                <div class="form-group">
                     {{ form_label(form.afkomst) }}
-                </label>
-                <div class="col-sm-4">
                     {{ form_widget(form.afkomst) }}
                 </div>
-            </div>
-
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
+                <div class="form-group">
                     {{ form_label(form.religie) }}
-                </label>
-                <div class="col-sm-4">
                     {{ form_widget(form.religie) }}
                 </div>
-            </div>
-
-            <div class="form-group col-md-12">
-                <label class="control-label col-sm-2">
+                <div class="form-group">
                     {{ form_label(form.opleiding) }}
-                </label>
-                <div class="col-sm-4">
                     {{ form_widget(form.opleiding) }}
                 </div>
-            </div>
 
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-save" aria-hidden="true"></i> {{ 'action.save'|trans }}
+                </button>
 
-            <button type="submit" class="btn btn-primary">
-                <i class="fa fa-save" aria-hidden="true"></i> {{ 'action.save'|trans }}
-            </button>
+            </fieldset>
 
             {{ form_end(form) }}
-            {#{{ form_widget(form.provincie_id, {'attr': {'class': 'custom-select'}}) }}#}
+
+        </div>
+        <div class=" col-md-4">
+
         </div>
     </div>
 
     <script
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+            crossorigin="anonymous">
+    </script>
 
     <script>
-        var $provincie = $('#profiel_provincie');
+        //scroll to element without proper selection. HTML does this automatically
+        // normaly but the fixed header screws it up a bit. Hence this hack.
+        $('select[required]').on('invalid', function(e){
+            $(e.target).focus();
+        });
+
         // When provincie gets selected ...
+        var $provincie = $('#meta_provincie');
 
         $provincie.change(function() {
             // ... retrieve the corresponding form.
@@ -185,19 +119,35 @@
             var data = {};
             data[$provincie.attr('name')] = $provincie.val();
             // Submit data via AJAX to the form's action path.
+
             $.ajax({
-                url : $form.attr('action'),
+                //url : $form.attr('action'),
+                url : '/nl/plaats/list?provincie='+$provincie.val(),
                 type: $form.attr('method'),
                 data : data,
-                success: function(html) {
+                //success: function(html) {
+                success: function(jsonProvinces) {
+
                     // Replace current position field ...
-                    $('#profiel_plaats').replaceWith(
+                    /*$('#meta_plaats').replaceWith(
                             // ... with the returned one from the AJAX response.
-                            $(html).find('#profiel_plaats')
-                    );
+                            $(html).find('#meta_plaats')
+                    );*/
                     // Position field now displays the appropriate positions.
+
+                    // Remove current options
+                    $('#meta_plaats').html('');
+
+                    // Empty value ...
+                    //$('#meta_plaats').append('<option value> Select a neighborhood of ' + citySelector.find("option:selected").text() + ' ...</option>');
+
+
+                    $.each(jsonProvinces, function (key, jsonProvince) {
+                        $('#meta_plaats').append('<option value="' + jsonProvince.id + '">' + jsonProvince.name + '</option>');
+                    });
                 }
             });
+
         });
     </script>
 
@@ -205,16 +155,10 @@
 {% endblock %}
 
 {% block sidebar %}
-    <div class="section">
-        <a href="{{ path('user_change_password') }}" class="btn btn-lg btn-block btn-danger">
-            <i class="fa fa-lock" aria-hidden="true"></i> {{ 'action.change_password'|trans }}
-        </a>
-    </div>
 
     {{ parent() }}
 
     {{ show_source_code(_self) }}
-
 
 
 {% endblock %}

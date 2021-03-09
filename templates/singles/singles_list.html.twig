@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+ {% block tabsmenu %}
+
+ {% endblock %}
+{% block body_id 'singles_list' %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
+
+{% block main %}
+
+<div class="row">
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+        <div class="dropdown show pb-md-4">
+            <a  class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Provincie
+            </a>
+
+            <div  class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a  class="dropdown-item " href="{{ path('singles_index') }}">Alle provincies</a>
+                {% for province in provinces %}
+                <a  class="dropdown-item province" href="?q={{ province.id }}">{{ province.naam }}</a>
+               {% endfor %}
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
+
+{% for single in singles %}
+
+    <div class="row singles">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 card">
+            <div class="card-body">
+                {% set mainpicture = single.user.pictures[0] %}
+                <a  href="{{ path('single_show') }}?user={{ single.user.id }}" src="{{ mainpicture.naam }}">
+                    <img class="test img-responsive float-left mr-4 rounded" src="/pictures/{{ single.user.id }}/thumbnail/{{ mainpicture.naam }}" >
+                </a>
+                <div class="card-text">
+                {{ single.user.username }}, {{ single.user.geboortedatum.diff((date('NOW'))).format('%y jaar') }}<br />
+                {{ single.plaats }}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+{% else %}
+<div class="row singles">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <div class="jumbotron">{{ 'database.no_singles_found'|trans }}</div>
+    </div>
+    <div class="col-md-4">
+    </div>
+    </div>
+{% endfor %}
+
+<script>
+
+window.onload = function() {
+    // Make sure province dropdown goes over navbar
+    $('#dropdownMenuLink').click(function (e) {
+       //1031 is 1 more than navbar
+       $('.dropdown-menu').css({"z-index":"1031"});
+
+    });
+
+    // We want to keep the selected province in the bootstrap dropdown
+    // Ugly function to get url parameter which we will need to make global or something
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        return results[1] || 0;
+    }
+    // We need to subtract 1 because of first item in list
+    var q = $.urlParam('q')-1;
+    var prov = $('a.province:eq('+q+')').text();
+
+    $('#dropdownMenuLink').text(prov);
+}
+</script>
+
+{% endblock %}
+
+
+
+{% block sidebar %}
+
+
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}

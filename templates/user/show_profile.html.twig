@@ -1,0 +1,73 @@
+{% extends 'user/usermenu.html.twig' %}
+
+{% set tab_active = 'show_profile' %}
+{% block extracss %}
+    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"/>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+            crossorigin="anonymous"
+    ></script>
+{% endblock %}
+
+{% block main %}
+    <br />
+
+    <div class="row">
+
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8 pb-2">
+            <div class="row list-inline files" data-target="#modal-gallery" data-toggle="modal-gallery">
+                {% if mainPicture.name is defined %}
+                    <div class="col-md-6 pb-2">
+                        <div class="thumb">
+                            <a class="thumbnail" download="{{ mainPicture.name }}" data-gallery="gallery" title="{{ mainPicture.name }}" href="{{ mainPicture.url }}">
+                                <img class="img-responsive" src="{{ mainPicture.bignailUrl }}" width="300px"/>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
+                {% if pictures is defined %}
+                    <div class="row col-md-6">
+                        {% for foto in pictures %}
+                            <div class="col-lg-6 col-xs-12 thumb">
+                                <a class="thumbnail" download="{{ foto.name }}" data-gallery="gallery" title="{{ foto.name }}" href="{{ foto.url }}">
+                                    <img class="img-responsive" src="{{ foto.thumbnailUrl }}" width="100px"/>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+             </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter="">
+        <div class="slides"></div>
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+    <!-- shared logic -->
+    {{ include('profile_meta_table.html.twig') }}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- blueimp Gallery script -->
+    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+
+{% endblock %}
+
+
+
+

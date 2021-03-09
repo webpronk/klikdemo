@@ -11,7 +11,9 @@
 
 namespace App\Controller;
 
+use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
@@ -25,6 +27,17 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
  */
 class SecurityController extends AbstractController
 {
+    /**
+     *
+     * Ugly way to reroute the nake / url, it works but not sure if it is best practice
+     * @Route("/", name="homepage_redirect")
+     */
+    public function redirectToLogin(): RedirectResponse
+    {
+        return $this->redirectToRoute('security_login');
+    }
+
+
     /**
      * @Route("/login", name="security_login")
      */

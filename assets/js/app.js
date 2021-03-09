@@ -1,4 +1,10 @@
 // loads the Bootstrap jQuery plugins
+
+const $ = require('jquery');
+global.$ = global.jQuery = $;
+
+//require('bootstrap');
+
 // Popper included in .bundle.js
 require('bootstrap/dist/js/bootstrap.bundle.js');
 
@@ -8,7 +14,7 @@ Vue.use(BootstrapVue);
 
 import 'bootstrap-sass/assets/javascripts/bootstrap/transition.js';
 import 'bootstrap-sass/assets/javascripts/bootstrap/alert.js';
-import 'bootstrap-sass/assets/javascripts/bootstrap/collapse.js';
+//import 'bootstrap-sass/assets/javascripts/bootstrap/collapse.js';
 //import 'bootstrap-sass/assets/javascripts/bootstrap/dropdown.js';
 import 'bootstrap-sass/assets/javascripts/bootstrap/modal.js';
 import 'jquery'

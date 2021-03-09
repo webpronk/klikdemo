@@ -1,0 +1,12 @@
+<div class="clearfix">
+    {% set mainpicture = user.receiver.pictures[0] %}
+    <a href="{{ path('single_show') }}?user={{ user.receiver.id }}" src="{{ mainpicture.naam }}">
+        <img class="img-responsive float-left mr-4 rounded" src="/pictures/{{ user.receiver.id }}/thumbnail/{{ mainpicture.naam }}" >
+    </a>
+    {{ user.receiver.username }}, {{ user.receiver.geboortedatum.diff((date('NOW'))).format('%y jaar') }}<br />
+    {{ user.receiver.meta.plaats }}
+
+    <div class="float-right">
+        <a href="{{ path('block_delete') }}?id={{ user.id }}"><i class="fa fa-trash-alt fa-2x" aria-hidden="true"></i></a>
+    </div>
+</div>

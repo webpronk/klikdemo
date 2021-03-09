@@ -57,7 +57,7 @@
             </trans-unit>
             <trans-unit id="title.homepage">
                 <source>title.homepage</source>
-                <target><![CDATA[Welkom bij de <strong>Symfony Demo</strong> applicatie]]></target>
+                <target><![CDATA[Welkom bij <strong>Klik2Match</strong>]]></target>
             </trans-unit>
             <trans-unit id="title.source_code">
                 <source>title.source_code</source>
@@ -90,6 +90,10 @@
             <trans-unit id="title.comment_error">
                 <source>title.comment_error</source>
                 <target>Er is een fout opgetreden bij het opslaan van je reactie</target>
+            </trans-unit>
+            <trans-unit id="title.already_in_your_list">
+                <source>title.already_in_your_list</source>
+                <target>Deze bestaat al in jouw lijst</target>
             </trans-unit>
 
             <trans-unit id="action.show">
@@ -136,7 +140,14 @@
                 <source>label.cancel</source>
                 <target>Annuleren</target>
             </trans-unit>
-
+            <trans-unit id="message.no_message_found">
+                <source>message.no_message_found</source>
+                <target>Geen berichten gevonden</target>
+            </trans-unit>
+             <trans-unit id="label.message">
+                <source>label.message</source>
+                <target>Bericht</target>
+            </trans-unit>
             <trans-unit id="action.create_post">
                 <source>action.create_post</source>
                 <target>Maak nieuw bericht</target>
@@ -148,6 +159,22 @@
             <trans-unit id="label.save_and_create_new">
                 <source>label.save_and_create_new</source>
                 <target>Opslaan en nieuwe maken</target>
+            </trans-unit>
+            <trans-unit id="label.sender">
+                <source>label.sender</source>
+                <target>Afzender</target>
+            </trans-unit>
+            <trans-unit id="label.receiver">
+                <source>label.receiver</source>
+                <target>Ontvanger</target>
+            </trans-unit>
+            <trans-unit id="label.status">
+                <source>label.status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="label.date">
+                <source>label.date</source>
+            <target>Datum</target>
             </trans-unit>
             <trans-unit id="action.back_to_list">
                 <source>action.back_to_list</source>
@@ -169,7 +196,18 @@
                 <source>action.browse_admin</source>
                 <target>Beheerpaneel bekijken</target>
             </trans-unit>
-
+            <trans-unit id="action.send_message">
+                <source>action.send_message</source>
+                <target>Stuur bericht</target>
+            </trans-unit>
+            <trans-unit id="action.like">
+                <source>action.like</source>
+                <target>Vind ik leuk</target>
+            </trans-unit>
+            <trans-unit id="action.block">
+                <source>action.block</source>
+                <target>Blokkeer</target>
+            </trans-unit>
             <trans-unit id="label.title">
                 <source>label.title</source>
                 <target>Titel</target>
@@ -205,6 +243,14 @@
             <trans-unit id="label.summary">
                 <source>label.summary</source>
                 <target>Samenvatting</target>
+            </trans-unit>
+            <trans-unit id="label.picture_first">
+                <source>label.picture_first</source>
+                <target>Upload één of meerdere fotos voordat je verder kunt gaan</target>
+            </trans-unit>
+             <trans-unit id="label.profile_fields_first">
+                <source>label.profile_fields_first</source>
+                <target>Maak eerst je profiel af om verder te kunnen gaan</target>
             </trans-unit>
             <trans-unit id="label.published_at">
                 <source>label.published_at</source>
@@ -249,7 +295,7 @@
             </trans-unit>
             <trans-unit id="menu.register">
                 <source>menu.register</source>
-                <target>Aanmelden</target>
+                <target>Inschrijven</target>
             </trans-unit>
             <trans-unit id="menu.admin">
                 <source>menu.admin</source>
@@ -270,6 +316,54 @@
             <trans-unit id="menu.search">
                 <source>menu.search</source>
                 <target>Zoek</target>
+            </trans-unit>
+            <trans-unit id="menu.messages">
+                <source>menu.messages</source>
+                <target>Berichten</target>
+            </trans-unit>
+            <trans-unit id="menu.message_list">
+                <source>menu.message_list</source>
+                <target>Ontvangen</target>
+            </trans-unit>
+            <trans-unit id="menu.message_send">
+                <source>menu.message_send</source>
+                <target>Verstuurd</target>
+            </trans-unit>
+            <trans-unit id="menu.singles">
+                <source>menu.singles</source>
+                <target>Singles</target>
+            </trans-unit>
+             <trans-unit id="menu.user_show_meta">
+                <source>menu.user_show_meta</source>
+                <target>Mijn profiel</target>
+            </trans-unit>
+             <trans-unit id="menu.favo_list">
+                <source>menu.favo_list</source>
+                <target>Favorieten</target>
+            </trans-unit>
+            <trans-unit id="menu.blocked_list">
+                <source>menu.blocked_list</source>
+                <target>Geblokkeerd</target>
+            </trans-unit>
+
+            <trans-unit id="database.no_message_found">
+                <source>database.no_message_found</source>
+                <target>Geen berichten gevonden</target>
+            </trans-unit>
+
+            <trans-unit id="database.no_favorites_found">
+                <source>database.no_favorites_found</source>
+                <target>Geen favorieten gevonden</target>
+            </trans-unit>
+
+            <trans-unit id="database.no_blockeds_found">
+                <source>database.no_blockeds_found</source>
+                <target>Geen Geblokkeerden gevonden</target>
+            </trans-unit>
+
+            <trans-unit id="database.no_singles_found">
+                <source>database.no_singles_found</source>
+                <target>Geen singles gevonden</target>
             </trans-unit>
 
             <trans-unit id="post.to_publish_a_comment">
@@ -370,6 +464,48 @@
                 <source>title.change_password</source>
                 <target>Verander wachtwoord</target>
             </trans-unit>
+             <trans-unit id="title.singles_list">
+                <source>title.singles_list</source>
+                <target>Singles</target>
+            </trans-unit>
+            <trans-unit id="title.message_list">
+                <source>title.message_list</source>
+                <target>Berichten</target>
+            </trans-unit>
+            <trans-unit id="title.message_send_list">
+                <source>title.message_send</source>
+                <target>Verstuurde berichten</target>
+            </trans-unit>
+            <trans-unit id="messages.message_send_success">
+                <source>messages.message_send_success</source>
+                <target>Bericht is verstuurd</target>
+            </trans-unit>
+            <trans-unit id="messages.message_history">
+                <source>messages.message_history</source>
+                <target>Oudere berichten</target>
+            </trans-unit>
+
+            <trans-unit id="favorites.favorite_added">
+                <source>favorites.favorite_added</source>
+                <target>Favoriet toegevoegd</target>
+            </trans-unit>
+            <trans-unit id="favorites.favorite_deleted">
+                <source>favorites.favorite_deleted</source>
+                <target>Favoriet verwijdered</target>
+            </trans-unit>
+             <trans-unit id="blocked.block_added">
+                <source>blocked.block_added</source>
+                <target>Block toegevoegd</target>
+            </trans-unit>
+            <trans-unit id="blocked.block_deleted">
+                <source>blocked.block_deleted</source>
+                <target>Geblokeerde verwijderd</target>
+            </trans-unit>
+             <trans-unit id="blocked.no_blocked_found">
+                <source>blocked.no_blocked_found</source>
+                <target>Geen geblokkeerde gevonden</target>
+            </trans-unit>
+
             <trans-unit id="action.change_password">
                 <source>action.change_password</source>
                 <target>Wachtwoord aanpassen</target>
@@ -387,6 +523,9 @@
                 <source>rss.description</source>
                 <target>De meest recente berichten, gepubliceerd op De Symfony Demo blog</target>
             </trans-unit>
+
+
+
             <trans-unit id="choose_an_option">
                 <source>choose_an_option</source>
                 <target>Kies een optie</target>

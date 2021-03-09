@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block tabsmenu %}
+    <div>
+
+
+        <ul class="nav nav-tabs">
+
+            {% set disabled = '' %}
+            {% if tab_active == 'list' %}
+                {% set disabled = 'disabled' %}
+            {% endif %}
+
+            <li class="nav-item ">
+                <a href="{{ path('message_new_list') }}" class="nav-link {{ disabled }}">
+                    <i class="fa fa-inbox" aria-hidden="true"></i> {{ 'menu.message_list'|trans }}
+                </a>
+            </li>
+
+            {% set disabled = '' %}
+            {% if tab_active == 'message_send_list' %}
+                {% set disabled = 'disabled' %}
+            {% endif %}
+
+            <li class="nav-item">
+                <a  href="{{ path('message_send_list') }}" class="nav-link {{ disabled }}">
+                    <i class="far fa-share-square" aria-hidden="true"></i> {{ 'menu.message_send'|trans }}
+                </a>
+            </li>
+        </ul>
+    </div>
+{% endblock %}

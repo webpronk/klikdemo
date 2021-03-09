@@ -2,68 +2,57 @@
   "entrypoints": {
     "js/app": {
       "js": [
-        "/build/runtime.6cf710cd.js",
-        "/build/vendors~js/admin~js/app~js/login~js/search~profile_album_js.60ed651f.js",
-        "/build/vendors~js/admin~js/app.1c4cbdff.js",
-        "/build/vendors~js/app.cf40d566.js",
-        "/build/js/app.b404ed8d.js"
+        "/build/js/app.7df5abff.js"
       ]
     },
     "js/login": {
       "js": [
-        "/build/runtime.6cf710cd.js",
-        "/build/vendors~js/admin~js/app~js/login~js/search~profile_album_js.60ed651f.js",
-        "/build/js/login.10bfe533.js"
+        "/build/js/login.f7ee5271.js"
       ]
     },
     "js/admin": {
       "js": [
-        "/build/runtime.6cf710cd.js",
-        "/build/vendors~js/admin~js/app~js/login~js/search~profile_album_js.60ed651f.js",
-        "/build/vendors~js/admin~js/app.1c4cbdff.js",
-        "/build/vendors~js/admin.a4c50ac5.js",
-        "/build/js/admin.2c3e9987.js"
+        "/build/js/admin.37b6f9c0.js"
       ]
     },
     "js/search": {
       "js": [
-        "/build/runtime.6cf710cd.js",
-        "/build/vendors~js/admin~js/app~js/login~js/search~profile_album_js.60ed651f.js",
-        "/build/js/search.92a16154.js"
+        "/build/js/search.fef0d2ae.js"
       ]
     },
-    "profile_album_js": {
+    "js/searchSingles": {
       "js": [
-        "/build/runtime.6cf710cd.js",
-        "/build/vendors~js/admin~js/app~js/login~js/search~profile_album_js.60ed651f.js",
-        "/build/vendors~profile_album_js.06c55d7d.js",
-        "/build/profile_album_js.3f9f70f8.js"
+        "/build/js/searchSingles.c27e6e0f.js"
+      ]
+    },
+    "js/album": {
+      "js": [
+        "/build/js/album.c5f88686.js"
+      ]
+    },
+    "blueimp_demo": {
+      "js": [
+        "/build/blueimp_demo.7ace6de2.js"
       ]
     },
     "css/album_css": {
-      "js": [
-        "/build/runtime.6cf710cd.js"
-      ],
       "css": [
-        "/build/css/album_css.08db5bbc.css"
+        "/build/css/album_css.a0e1ac4f.css"
       ]
     },
     "css/app": {
-      "js": [
-        "/build/runtime.6cf710cd.js",
-        "/build/vendors~css/app.aed5a5c0.js"
-      ],
       "css": [
-        "/build/vendors~css/app.6c13274a.css",
-        "/build/css/app.11cdfc05.css"
+        "/build/css/app.6104b7af.css"
+      ]
+    },
+    "css/custom": {
+      "css": [
+        "/build/css/custom.3affc210.css"
       ]
     },
     "css/admin": {
-      "js": [
-        "/build/runtime.6cf710cd.js"
-      ],
       "css": [
-        "/build/css/admin.9a810b38.css"
+        "/build/css/admin.938bd957.css"
       ]
     }
   }

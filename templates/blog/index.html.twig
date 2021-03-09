@@ -2,12 +2,34 @@
 
 {% block body_id 'blog_index' %}
 
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('js/search') }}
+{% endblock %}
+
 {% block main %}
+
+    {# Used to be in base.html.twig #}
+    <form action="{{ path('blog_search') }}" method="get">
+        <div class="form-group">
+            <input name="q"
+                   class="form-control search-field"
+                   placeholder="{{ 'post.search_for'|trans }}"
+                   autocomplete="off"
+                   autofocus
+                   data-no-results-message="{{ 'post.search_no_results'|trans }}"
+            >
+        </div>
+    </form>
+
+    <div id="results">
+    </div>
+
     {% for post in posts %}
         <article class="post">
             <h2>
                 <a href="{{ path('blog_post', {slug: post.slug}) }}">
-                    {{ post.title }}
+                    {{ post.title }} index
                 </a>
             </h2>
 

@@ -2,84 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78da0e08-d0a3-4d7f-ac62-f35a8d2f4588" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/blueimp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scss/blueimp.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/AlbumController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Controller/ProfielController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/AlbumFormType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Form/ProfielType.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/security/login-clean.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/edit_album.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/edit_main.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/edit_meta.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/edit_meta_onecol.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/user/usermenu.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/0.830d5dde.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/1.bdd72f15.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/2.dbd2ede0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/css/admin.1b3ff8e3.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/css/app.4aa95248.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/js/admin.4ca6ad4a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/js/app.b0ae906f.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/js/login.71306f38.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/build/js/search.6682ea4d.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.674f50d2.eot" afterPath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.674f50d2.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.af7ae505.woff2" afterPath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.af7ae505.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.b06871f2.ttf" afterPath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.b06871f2.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.fee66e71.woff" afterPath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.fee66e71.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-bold-italic.0b6bb672.woff2" afterPath="$PROJECT_DIR$/public/build/fonts/lato-bold-italic.0b6bb672.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-bold-italic.9c7e4e9e.woff" afterPath="$PROJECT_DIR$/public/build/fonts/lato-bold-italic.9c7e4e9e.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-bold.cccb8974.woff2" afterPath="$PROJECT_DIR$/public/build/fonts/lato-bold.cccb8974.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-bold.d878b6c2.woff" afterPath="$PROJECT_DIR$/public/build/fonts/lato-bold.d878b6c2.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-normal-italic.4eb103b4.woff2" afterPath="$PROJECT_DIR$/public/build/fonts/lato-normal-italic.4eb103b4.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-normal-italic.f28f2d64.woff" afterPath="$PROJECT_DIR$/public/build/fonts/lato-normal-italic.f28f2d64.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-normal.27bd77b9.woff" afterPath="$PROJECT_DIR$/public/build/fonts/lato-normal.27bd77b9.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/fonts/lato-normal.bd03a2cc.woff2" afterPath="$PROJECT_DIR$/public/build/fonts/lato-normal.bd03a2cc.woff2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/klikdemo.iml" afterPath="$PROJECT_DIR$/.idea/klikdemo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scss/app.scss" afterPath="$PROJECT_DIR$/assets/scss/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/bundles.php" afterPath="$PROJECT_DIR$/config/bundles.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/twig.yaml" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/validator.yaml" afterPath="$PROJECT_DIR$/config/packages/validator.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/services.yaml" afterPath="$PROJECT_DIR$/config/services.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/entrypoints.json" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/images/fontawesome-webfont.912ec66d.svg" afterPath="$PROJECT_DIR$/public/build/images/fontawesome-webfont.912ec66d.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/manifest.json" afterPath="$PROJECT_DIR$/public/build/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/build/runtime.6cf710cd.js" afterPath="$PROJECT_DIR$/public/build/runtime.6cf710cd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Admin/BlogController.php" afterPath="$PROJECT_DIR$/src/Controller/Admin/BlogController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/User.php" afterPath="$PROJECT_DIR$/src/Entity/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/UserType.php" afterPath="$PROJECT_DIR$/src/Form/UserType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/index.html.twig" afterPath="$PROJECT_DIR$/templates/blog/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/blog/post_show.html.twig" afterPath="$PROJECT_DIR$/templates/blog/post_show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/default/_flash_messages.html.twig" afterPath="$PROJECT_DIR$/templates/default/_flash_messages.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translations/messages+intl-icu.en.xlf" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.en.xlf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translations/messages+intl-icu.nl.xlf" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.nl.xlf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change afterPath="$PROJECT_DIR$/assets/js/album.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/blueimpdemo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/jquery.singlesSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/searchSingles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/album.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/app_back.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/thirdpartyjs/jquery.ui.widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascript/jquery.ui.widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/tmpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BlueimpController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MessageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PlaatsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ShowSingleController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SinglesListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Meta.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/PicturesOld.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MessageType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MetaRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PicturesOldRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/PictureHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Service/ProfileReadyHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base_back.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base_menu_latestbootstrap.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lists/blocked/already_exists.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lists/blocked/blocked_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lists/favo/favo_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/lists/list_profile_template.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/answer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/history.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/inbox_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/messagemenu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/outbox_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/send_success.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/show_message.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/message/showsend.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile_meta_table.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/singles/show_single.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/singles/singlemenu.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/singles/singles_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/edit_album_backup.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/show_profile.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/upload.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/klikdemo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/klikdemo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/blueimp.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/blueimp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/blueimp.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/entrypoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/entrypoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.674f50d2.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.af7ae505.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.b06871f2.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/fonts/fontawesome-webfont.fee66e71.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/images/fontawesome-webfont.912ec66d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/runtime.6cf710cd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AlbumController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AlbumController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ProfielController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MetaController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProfielType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MetaType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/layout.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/layout.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/_flash_messages.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/_flash_messages.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit_album.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit_album.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit_main.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit_main.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit_meta.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit_meta.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/usermenu.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/usermenu.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.en.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.en.xlf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/messages+intl-icu.nl.xlf" beforeDir="false" afterPath="$PROJECT_DIR$/translations/messages+intl-icu.nl.xlf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
-    <ignored path="klikdemo.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path=".idea/dataSources.local.xml" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -92,209 +112,39 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="klikdemo" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="edit_album.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/user/edit_album.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1185">
-              <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
-              <folding>
-                <marker date="1569689809625" expanded="true" signature="3571:4878" ph="..." />
-                <marker date="1569689809625" expanded="true" signature="5002:6892" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blueimp.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/blueimp.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="usermenu.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user/usermenu.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blueimp.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user/blueimp.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="158" column="14" selection-start-line="81" selection-start-column="3" selection-end-line="158" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blueimp.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/js/blueimp.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding>
-                <element signature="e#26#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/admin.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/scss/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webpack.config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="33" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/blueimp/jquery-file-upload/js/demo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/Controller/dummy.php" />
-        <option value="$PROJECT_DIR$/src/Form/profieltypedummy.php" />
-        <option value="$PROJECT_DIR$/src/Form/example.php" />
-        <option value="$PROJECT_DIR$/src/Form/sportmeetupType.php" />
-        <option value="$PROJECT_DIR$/src/Controller/MeetupController.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Sport.php" />
-        <option value="$PROJECT_DIR$/templates/user/sport.html.twig" />
-        <option value="$PROJECT_DIR$/src/Form/SportmeetupType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Sportmeetup.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Plaats.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Provincie.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Land.php" />
-        <option value="$PROJECT_DIR$/src/Repository/ProvincieRepository.php" />
-        <option value="$PROJECT_DIR$/src/Form/RegistrationFormType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/src/Controller/RegistrationController.php" />
-        <option value="$PROJECT_DIR$/templates/blog/post_show.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/BlogController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/ProfielController.php" />
-        <option value="$PROJECT_DIR$/templates/default/_flash_messages.html.twig" />
-        <option value="$PROJECT_DIR$/templates/user/edit_main.html.twig" />
-        <option value="$PROJECT_DIR$/translations/messages+intl-icu.nl.xlf" />
-        <option value="$PROJECT_DIR$/src/Form/UserType.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/BlogController.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerStatus.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerKleding.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerAfkomst.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerBouw.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerHaarkleur.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerReligie.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerOpleiding.php" />
-        <option value="$PROJECT_DIR$/templates/user/oldform.twig" />
-        <option value="$PROJECT_DIR$/src/Form/ProfielType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/BeheerSport.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Profiel.php" />
-        <option value="$PROJECT_DIR$/src/Controller/UserController.php" />
-        <option value="$PROJECT_DIR$/templates/user/usermenu.html.twig" />
-        <option value="$PROJECT_DIR$/templates/user/edit_meta.html.twig" />
-        <option value="$PROJECT_DIR$/translations/messages+intl-icu.en.xlf" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
-        <option value="$PROJECT_DIR$/src/Form/AlbumFormType.php" />
-        <option value="$PROJECT_DIR$/src/Controller/AlbumController.php" />
-        <option value="$PROJECT_DIR$/templates/user/blueimp.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/Controller/BlueImpcontroller.php" />
-        <option value="$PROJECT_DIR$/assets/scss/blueimp.css" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/assets/scss/blueimp.scss" />
-        <option value="$PROJECT_DIR$/assets/js/blueimp.js" />
-        <option value="$PROJECT_DIR$/templates/user/edit_album.html.twig" />
-      </list>
-    </option>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/node_modules" />
-  </component>
+  <component name="PhpDebugGeneral" xdebug_force_break_when_outside_project="false" zd_debug_can_accept_external_connections="false" zd_debug_ignore_z_ray_system_requests="false" />
   <component name="PhpServers">
     <servers>
-      <server host="127.0.0.1" id="b18943ad-b472-4c6a-8584-2d597d760615" name="127.0.0.1" port="8000" use_path_mappings="true">
-        <path_mappings>
-          <mapping local-root="$PROJECT_DIR$/vendor/symfony/web-server-bundle/Resources/router.php" remote-root="/www/klikdemo/vendor/symfony/web-server-bundle/Resources/router.php" />
-        </path_mappings>
-      </server>
+      <server host="http://klikdemo/nl/" id="fde4fa78-e2e1-46d3-b20f-23825d74e18d" name="klikdemo" port="9001" use_path_mappings="true" />
+      <server host="localhost" id="c7194dc5-59bb-478f-b37c-42c2979c90e0" name="localhost" />
+      <server host="klikdemo" id="2baffc62-cf59-40b9-8884-e065811c0bf7" name="klikdemo (1)" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="php_installation_7.2">
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://klikdemo/" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php_installation_7.2">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/vendor/dama/doctrine-test-bundle" />
-      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
       <path value="$PROJECT_DIR$/vendor/pagerfanta/pagerfanta" />
@@ -307,7 +157,6 @@
       <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
       <path value="$PROJECT_DIR$/vendor/psr/log" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
       <path value="$PROJECT_DIR$/vendor/php-cs-fixer/diff" />
@@ -340,7 +189,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
       <path value="$PROJECT_DIR$/vendor/symfony/finder" />
@@ -393,150 +241,143 @@
       <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-messageformatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/fortawesome/font-awesome" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1299" />
-    <option name="height" value="743" />
+  <component name="ProjectId" id="1UWTcdYurqTq6pwmT1WXiItnflK" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Code SmellPHP</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Data flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Error handlingJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralPHP</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>PHP</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+          <State>
+            <id>ServiceSymfony</id>
+          </State>
+          <State>
+            <id>Symfony</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
-  </component>
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="klikdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="klikdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="klikdemo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="klikdemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="klikdemo" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../klik2match-oud" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="Constants" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/blocked" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/scss" />
-      <recent name="$PROJECT_DIR$/" />
-      <recent name="$PROJECT_DIR$/src/Controller" />
-      <recent name="$PROJECT_DIR$/src/Form" />
+      <recent name="$PROJECT_DIR$/templates/blocked" />
+      <recent name="$PROJECT_DIR$/templates/favo" />
+      <recent name="$PROJECT_DIR$/templates/message" />
       <recent name="$PROJECT_DIR$/templates/user" />
+      <recent name="$PROJECT_DIR$/assets/scss" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/lists" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
+    <configuration name="index.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:9000/klikdemo/public/index.php">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
+    <configuration default="true" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" server_name="klikdemo (1)" session_id="PHPSTORM">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.php" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -567,36 +408,102 @@
       <workItem from="1569494973483" duration="110000" />
       <workItem from="1569495111413" duration="10243000" />
       <workItem from="1569593072805" duration="7879000" />
+      <workItem from="1569924751308" duration="1989000" />
+      <workItem from="1569926785230" duration="6887000" />
+      <workItem from="1575290386981" duration="4387000" />
+      <workItem from="1575470068947" duration="492000" />
+      <workItem from="1575470611388" duration="111000" />
+      <workItem from="1575471451467" duration="1184000" />
+      <workItem from="1575544835142" duration="2945000" />
+      <workItem from="1575553422254" duration="2962000" />
+      <workItem from="1575556469043" duration="162000" />
+      <workItem from="1575556652866" duration="660000" />
+      <workItem from="1575557347012" duration="574000" />
+      <workItem from="1575557960219" duration="577000" />
+      <workItem from="1575558554504" duration="880000" />
+      <workItem from="1575886639451" duration="4190000" />
+      <workItem from="1575903584963" duration="1816000" />
+      <workItem from="1575905481737" duration="199000" />
+      <workItem from="1577026652529" duration="710000" />
+      <workItem from="1577027455675" duration="4873000" />
+      <workItem from="1577033320224" duration="429000" />
+      <workItem from="1577033766306" duration="393000" />
+      <workItem from="1577035298513" duration="831000" />
+      <workItem from="1577036143003" duration="477000" />
+      <workItem from="1577104242082" duration="1794000" />
+      <workItem from="1577106512034" duration="4000" />
+      <workItem from="1577106534513" duration="443000" />
+      <workItem from="1577107023224" duration="959000" />
+      <workItem from="1577112493243" duration="144000" />
+      <workItem from="1577112858888" duration="124000" />
+      <workItem from="1577113024903" duration="6553000" />
+      <workItem from="1577199624788" duration="1530000" />
+      <workItem from="1577448759280" duration="23784000" />
+      <workItem from="1577960965517" duration="13217000" />
+      <workItem from="1578912157913" duration="7054000" />
+      <workItem from="1579254745246" duration="11326000" />
+      <workItem from="1579515249454" duration="12965000" />
+      <workItem from="1579687142691" duration="24079000" />
+      <workItem from="1580119599686" duration="12031000" />
+      <workItem from="1580209303356" duration="35378000" />
+      <workItem from="1580480832544" duration="7586000" />
+      <workItem from="1580724664933" duration="13227000" />
+      <workItem from="1580816665954" duration="37501000" />
+      <workItem from="1581330204157" duration="26043000" />
+      <workItem from="1581675495214" duration="25033000" />
+      <workItem from="1582540165713" duration="16840000" />
+      <workItem from="1582894112549" duration="39138000" />
+      <workItem from="1584110252986" duration="8863000" />
+      <workItem from="1584370357027" duration="21900000" />
+      <workItem from="1585408988169" duration="6456000" />
+      <workItem from="1586188691418" duration="2658000" />
+      <workItem from="1586436567451" duration="12211000" />
+      <workItem from="1589455129119" duration="7439000" />
+      <workItem from="1589793243031" duration="7390000" />
+      <workItem from="1589882958139" duration="10806000" />
+      <workItem from="1590135450837" duration="10387000" />
+      <workItem from="1590482309073" duration="9831000" />
+      <workItem from="1590673411792" duration="13102000" />
+      <workItem from="1591533729176" duration="7723000" />
+      <workItem from="1591870388242" duration="4783000" />
+      <workItem from="1592383912206" duration="19583000" />
+      <workItem from="1592556222092" duration="607000" />
+      <workItem from="1592557457668" duration="7006000" />
+      <workItem from="1594288100652" duration="37377000" />
+      <workItem from="1596539122006" duration="3577000" />
+      <workItem from="1598963578897" duration="10044000" />
+      <workItem from="1600341857373" duration="15404000" />
+      <workItem from="1600691499409" duration="12915000" />
+      <workItem from="1600844457050" duration="20351000" />
+      <workItem from="1601375477723" duration="13684000" />
+      <workItem from="1602072827533" duration="53955000" />
+      <workItem from="1603459689856" duration="3447000" />
+      <workItem from="1604930057645" duration="16733000" />
+      <workItem from="1605787217487" duration="15284000" />
+      <workItem from="1605961753298" duration="15020000" />
+      <workItem from="1606739845391" duration="8486000" />
+      <workItem from="1606998678683" duration="26044000" />
+      <workItem from="1607339009947" duration="14020000" />
+      <workItem from="1607955535839" duration="6033000" />
+      <workItem from="1609069947076" duration="4050000" />
+      <workItem from="1612185290943" duration="19615000" />
+      <workItem from="1614598493321" duration="13140000" />
+      <workItem from="1614864042534" duration="12342000" />
+      <workItem from="1615298695997" duration="1072000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192193000" />
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312051" sideWeight="0.6910569" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37110934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980047" sideWeight="0.4796748" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3312051" sideWeight="0.3089431" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20162602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39969134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -606,397 +513,204 @@
       <collection />
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
+        <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/src/Controller/RegistrationController.php</url>
           <line>20</line>
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
+        <line-breakpoint type="php">
           <url>file://$PROJECT_DIR$/vendor/symfony/doctrine-bridge/Validator/Constraints/UniqueEntityValidator.php</url>
           <line>44</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/MetaController.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/PlaatsController.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>985</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Migrations/Version20190823115426.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>382</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>230</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>1064</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>1027</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>1155</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/templates/user/edit_album_bu.html.twig</url>
+          <line>95</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlogController.php</url>
+          <line>13</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/MetaController.php</url>
+          <line>100</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/AlbumController.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>632</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/ShowSingleController.php</url>
+          <line>65</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>281</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>1089</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>417</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Service/PictureHelper.php</url>
+          <line>35</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Repository/PicturesRepository.php</url>
+          <line>45</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Repository/PicturesRepository.php</url>
+          <line>73</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Repository/MessagesRepository.php</url>
+          <line>51</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/MessageController.php</url>
+          <line>130</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/MessageController.php</url>
+          <line>127</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>821</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/SinglesListController.php</url>
+          <line>79</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Repository/PostRepository.php</url>
+          <line>70</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlogController.php</url>
+          <line>154</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/ControllerTrait.php</url>
+          <line>128</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Service/ProfileReadyHelper.php</url>
+          <line>34</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>1002</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>402</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlueimpController.php</url>
+          <line>338</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/MessageController.php</url>
+          <line>59</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/base_menu_latestbootstrap.html.twig</url>
+          <line>16</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Controller/BlockedController.php</url>
+          <line>52</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
     </breakpoint-manager>
-    <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerAfkomst.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="86" column="5" selection-start-line="83" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerKleding.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/KledingKoppel.php" />
-    <entry file="file://$PROJECT_DIR$/src/Form/UserType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="59" column="35" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerBouw.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="86" column="5" selection-start-line="83" selection-start-column="2" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerHaarkleur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerReligie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="77" column="51" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerOpleiding.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="86" column="5" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/oldform.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3015">
-          <caret line="201" column="30" selection-start-line="36" selection-start-column="23" selection-end-line="201" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/BeheerSport.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Profiel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="96" column="19" selection-start-line="96" selection-start-column="19" selection-end-line="96" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ProfielController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translations/messages+intl-icu.en.xlf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="298" column="44" selection-start-line="298" selection-start-column="44" selection-end-line="298" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/doctrine.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="52" column="57" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/edit_meta.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1965">
-          <caret line="131" column="26" selection-start-line="131" selection-start-column="26" selection-end-line="131" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ProfielType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="167" column="47" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/RegistrationFormType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Pictures.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/AlbumFormType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/edit_main.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BlueImpcontroller.php" />
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BlueImpcontrollerOld.php" />
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/bundles.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/AlbumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BlueImpcontrollerOld.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5347">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/highlight.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/doclinks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/blueimp/jquery-file-upload/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1425">
-            <caret line="95" column="3" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#122#144#0" expanded="false" />
-            <element signature="e#211#278#0" expanded="false" />
-            <element signature="e#476#538#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/blueimp/jquery-file-upload/js/demo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/blueimp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/usermenu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/blueimp-file-upload/css/jquery.fileupload.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/admin.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scss/blueimp.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/blueimp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding>
-            <element signature="e#26#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/blueimp.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="158" column="14" selection-start-line="81" selection-start-column="3" selection-end-line="158" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/edit_album.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="79" column="2" selection-start-line="79" selection-start-column="2" selection-end-line="79" selection-end-column="2" />
-          <folding>
-            <marker date="1569689809625" expanded="true" signature="3571:4878" ph="..." />
-            <marker date="1569689809625" expanded="true" signature="5002:6892" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <watches-manager>
+      <configuration name="index.php">
+        <watch expression="$this-&gt;getUser()-&gt;getId()" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

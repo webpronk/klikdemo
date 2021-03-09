@@ -107,6 +107,9 @@
     "ezyang/htmlpurifier": {
         "version": "v4.10.0"
     },
+    "fortawesome/font-awesome": {
+        "version": "5.14.0"
+    },
     "friendsofphp/php-cs-fixer": {
         "version": "2.2",
         "recipe": {
@@ -131,8 +134,8 @@
     "pagerfanta/pagerfanta": {
         "version": "v2.0.1"
     },
-    "paragonie/random_compat": {
-        "version": "v9.99.99.x-dev"
+    "php": {
+        "version": "7.1.3"
     },
     "php-cs-fixer/diff": {
         "version": "v1.3.0"
@@ -314,8 +317,17 @@
     "symfony/polyfill-intl-idn": {
         "version": "v1.12.0"
     },
+    "symfony/polyfill-intl-messageformatter": {
+        "version": "v1.14.0"
+    },
+    "symfony/polyfill-intl-normalizer": {
+        "version": "v1.18.1"
+    },
     "symfony/polyfill-mbstring": {
         "version": "1.9-dev"
+    },
+    "symfony/polyfill-php56": {
+        "version": "v1.18.1"
     },
     "symfony/polyfill-php70": {
         "version": "1.9-dev"

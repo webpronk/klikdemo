@@ -1,0 +1,97 @@
+{% extends 'base.html.twig' %}
+
+{% block submenu %}
+{% endblock %}
+
+{% block body_id 'message_show' %}
+
+{% block main %}
+
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="container ">
+                <div class="row fixedheight">
+                    <div class="span3 offset4">
+                        <img class="img-responsive float-left mr-4 rounded" src="{{ profilePicsOfChat[messageForm.vars.value.sender.id].bignailUrl }}" width="75px"/>
+                    </div><!-- /span -->
+                    <div class="bottomaligned">
+                        <div class="span1">
+                            <i class="fa fa-calendar"></i> {{ messageForm.vars.value.creationDate|date('d-m-Y H:i') }}
+                        </div><!-- /span -->
+                        <div class="span1">
+                            <h3>{{ messageForm.vars.value.sender.username }}</h3>
+                        </div><!-- /span -->
+                    </div>
+                </div><!-- /row -->
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="container ">
+                <div class="row fixedheight">
+                    <div class="span1">
+                        {{ messageForm.vars.value.messageBody }}
+                    </div><!-- /span -->
+                </div><!-- /row -->
+            </div>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+
+    <div class="row btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4">
+
+            <div class="btn-group mr-2 " role="group" aria-label="First group">
+
+                <a href="{{ path('message_answer') }}?id={{ messageForm.vars.value.id  }}" class="btn btn-primary ">
+                    <i class="fa fa-envelope" aria-hidden="true"></i> Antwoord
+                </a>
+
+            </div>
+
+            <div class="btn-group mr-2 " role="group" aria-label="Second group">
+
+                <a href="{{ path('blocked_make') }}?user={{ messageForm.vars.value.sender.id }}" class="btn btn-primary ">
+                    <i class="fa fa-ban" aria-hidden="true"></i>  {{ 'action.block'|trans }}
+                </a>
+
+            </div>
+
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 ">
+            {{ include('message/history.html.twig') }}
+        </div>
+        <div class="col-md-4">
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+{% block sidebar %}
+
+    {{ parent() }}
+
+    {{ show_source_code(_self) }}
+{% endblock %}

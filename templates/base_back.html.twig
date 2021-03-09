@@ -1,0 +1,227 @@
+{#
+   This is the base template used as the application layout which contains the
+   common elements and decorates all the other templates.
+   See https://symfony.com/doc/current/book/templating.html#template-inheritance-and-layouts
+#}
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>{% block title %}Klik2Match.nl{% endblock %}</title>
+        <link rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('css/app') }}
+        {% endblock %}
+        {% block extracss %}
+
+        {% endblock %}
+        <!-- ugly hack for bootstrap selectboxes that screw up the selections-->
+        <style>
+            .form-control {
+                padding: .6rem .8rem !important;
+                border: 2px solid #ced4da !important;
+                transition: none !important;
+            }
+            select.form-control{
+                height: auto !important;
+                padding: .6rem .8rem calc(.6rem + 1px) .8rem !important;
+            }
+        </style>
+
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+
+    <body id="{% block body_id %}{% endblock %}">
+        <div class="container body-container">
+
+        {% block header %}
+            {#<header>#}
+                <div class="navbar navbar-light bg-light navbar-static-top navbar-expand-md" role="navigation">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="{{ path('homepage') }}">
+                            Klik2Match.nl
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">{{ 'menu.toggle_nav'|trans }}</span>
+                            &#x2630;
+                        </button>
+                        <div class="navbar-collapse collapse">
+                            <ul class="nav nav-pills navbar-right">
+
+                                {% block header_navigation_links %}
+
+                                    {% if not app.user %}
+                                        <li>
+                                            <a href="{{ path('app_register') }}">
+                                                <i class="fa fa-user-plus" aria-hidden="true"></i> {{ 'menu.register'|trans }}
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('security_login') }}">
+                                                <i class="fa fa-user" aria-hidden="true"></i> {{ 'menu.login'|trans }}
+                                            </a>
+                                        </li>
+
+
+                                    {% endif %}
+                                {% endblock %}
+
+                                {% set state = '' %}
+                                {% if app.request.pathinfo == path('singles_index') %}
+                                    {% set state = 'active' %}
+                                {% endif %}
+
+                                <li class="nav-item {{ state }}">
+                                    <a href="{{ path('singles_index') }}" class="nav-link {{ state }}" >
+                                        <i class="fa fa-user-friends" aria-hidden="true"></i> {{ 'menu.singles'|trans }}
+                                    </a>
+                                </li>
+
+                                {# Maybe later when we are big
+                                <li>
+                                    <a href="{{ path('blog_search') }}"> <i class="fa fa-search"></i> {{ 'menu.search'|trans }}</a>
+                                </li>#}
+
+                                {% if app.user %}
+
+                                    {% set state = '' %}
+                                    {% if app.request.pathinfo == path('message_new_list') %}
+                                        {% set state = 'active' %}
+                                    {% endif %}
+                                    <li class="nav-item {{ state }}">
+                                        <a href="{{ path('message_new_list') }}" class="nav-link {{ state }}">
+                                            <i class="fa fa-envelope"></i> {{ 'menu.messages'|trans }}
+                                        </a>
+                                    </li>
+                                    {% set state = '' %}
+                                    {% if
+                                        app.request.pathinfo == path('user_show_profile') or
+                                        app.request.pathinfo == path('user_edit_profile') or
+                                        app.request.pathinfo == path('user_edit_album') or
+                                        app.request.pathinfo == path('user_edit_main') or
+                                        app.request.pathinfo == path('favo_list') or
+                                        app.request.pathinfo == path('blocked_list')
+                                    %}
+                                        {% set state = 'active' %}
+                                    {% endif %}
+                                    <li class="nav-item {{ state }} dropdown">
+                                        <a href="#" class="dropdown-toggle nav-link {{ state }}" data-toggle="dropdown" role="button">
+                                            <i class="fa fa-user" aria-hidden="false"></i> {{ 'menu.user_edit_main'|trans }}
+                                        </a>
+                                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                            <li class="nav">
+                                                <a href="{{ path('user_show_profile') }}">
+                                                    <i class="fa fa-user" aria-hidden="false"></i> {{ 'menu.user_show_profile'|trans }}
+                                                </a>
+                                            </li>
+                                            <li class="nav ">
+                                                <a  href="{{ path('user_edit_profile') }}">
+                                                    <i class="fa fa-address-card" aria-hidden="false"></i> {{ 'menu.user_edit_meta'|trans }}
+                                                </a>
+                                            </li>
+                                            <li class="nav ">
+                                                <a  href="{{ path('user_edit_album') }}">
+                                                    <i class="fa fa-camera" aria-hidden="false"></i> {{ 'menu.user_edit_album'|trans }}
+                                                </a>
+                                            </li>
+                                            <li class="nav ">
+                                                <a href="{{ path('user_edit_main') }}">
+                                                    <i class="fa fa-id-badge" aria-hidden="false"></i> {{ 'menu.user_edit_main'|trans }}
+                                                </a>
+                                            </li>
+                                            <li class="nav ">
+                                                <a href="{{ path('favo_list') }}">
+                                                    <i class="fa fa-star" aria-hidden="false"></i> {{ 'menu.favo_list'|trans }}
+                                                </a>
+                                            </li>
+                                            <li class="nav ">
+                                                <a href="{{ path('blocked_list') }}">
+                                                    <i class="fa fa-ban" aria-hidden="false"></i> {{ 'menu.blocked_list'|trans }}
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="{{ path('security_logout') }}">
+                                            <i class="fa fa-sign-out-alt" aria-hidden="true"></i> {{ 'menu.logout'|trans }}
+                                        </a>
+                                    </li>
+
+                                {% endif %}
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            {#</header>#}
+
+        {% endblock %}
+
+
+
+            {% block submenu %}
+                submenu base
+            {% endblock %}
+
+            {% block body %}
+
+                <div class="row">
+                    <div id="main" class="col-md-12">
+                        {{ include('default/_flash_messages.html.twig') }}
+
+                        {% block main %}
+                        {% endblock %}
+                    </div>
+
+
+                </div>
+            {% endblock %}
+        </div>
+
+
+
+        {% block footer %}
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div id="footer-copyright" class="col-md-6">
+                            <p>&copy; {{ 'now'|date('Y') }} - The Symfony Project</p>
+                            <p>{{ 'mit_license'|trans }}</p>
+                        </div>
+                        <div id="footer-resources" class="col-md-6">
+                            <p>
+                                <a href="https://twitter.com/symfony" title="Symfony Twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/SensioLabs" title="SensioLabs Facebook">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://symfony.com/blog/" title="Symfony Blog">
+                                    <i class="fa fa-rss" aria-hidden="true"></i>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        {% endblock %}
+
+        {# it's not mandatory to set the timezone in localizeddate(). This is done to
+           avoid errors when the 'intl' PHP extension is not available and the application
+           is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
+        <!-- Page rendered on {{ 'now'|localizeddate('long', 'long', null, 'UTC') }} -->
+
+        {% block javascripts %}
+
+            {{ encore_entry_script_tags('js/app') }}
+
+        {% endblock %}
+    </body>
+</html>

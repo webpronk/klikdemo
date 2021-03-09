@@ -1,4 +1,5 @@
 var Encore = require('@symfony/webpack-encore');
+var path = require('path');
 
 Encore
     .setOutputPath('public/build/')
@@ -15,13 +16,21 @@ Encore
     .addEntry('js/login', './assets/js/login.js')
     .addEntry('js/admin', './assets/js/admin.js')
     .addEntry('js/search', './assets/js/search.js')
-    .addEntry('profile_album_js', './assets/js/blueimp.js')
-    .addStyleEntry('css/album_css', ['./assets/scss/blueimp.scss'])
+    .addEntry('js/searchSingles', './assets/js/searchSingles.js')
+    //.addEntry('js/jquery-file-upload',  path.resolve(__dirname, 'node_modules/blueimp-file-upload/js/jquery.fileupload.js') )
+    .addEntry('js/album', './assets/js/album.js')
+    .addEntry('blueimp_demo', './assets/js/blueimpdemo.js')
+    .addStyleEntry('css/album_css', ['./assets/scss/album.scss'])
     .addStyleEntry('css/app', ['./assets/scss/app.scss'])
+    .addStyleEntry('css/custom', ['./assets/scss/custom.scss'])
     .addStyleEntry('css/admin', ['./assets/scss/admin.scss'])
-    .splitEntryChunks()
-    .enableSingleRuntimeChunk()
+    //.splitEntryChunks()
+    .disableSingleRuntimeChunk()
 
 ;
+var config = Encore.getWebpackConfig();
+config.resolve.alias = {
+    'blueimp-jquery-file-upload': path.resolve(__dirname, 'node_modules/blueimp-file-upload/js/jquery.fileupload.js'),
+};
 
-module.exports = Encore.getWebpackConfig();
+module.exports = config;

@@ -7,18 +7,21 @@
 <html lang="{{ app.request.locale }}">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>{% block title %}Klik2Match.nl{% endblock %}</title>
         <link rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
         {% block stylesheets %}
             {{ encore_entry_link_tags('css/app') }}
+            <!-- copied from bootswatch example page https://bootswatch.com/flatly/ -->
+            {{ encore_entry_link_tags('css/custom') }}
         {% endblock %}
         {% block extracss %}
 
         {% endblock %}
         <!-- ugly hack for bootstrap selectboxes that screw up the selections-->
         <style>
-            .form-control {
+           /* .form-control {
                 padding: .6rem .8rem !important;
                 border: 2px solid #ced4da !important;
                 transition: none !important;
@@ -26,109 +29,164 @@
             select.form-control{
                 height: auto !important;
                 padding: .6rem .8rem calc(.6rem + 1px) .8rem !important;
-            }
+            }*/
+
+           select.form-control {
+               transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+           }
+
+           select.form-control {
+               display: inline-block;
+               width: 100%;
+               height: calc(1.5em + 0.75rem + 2px);
+               padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+               font-size: 0.9375rem;
+               font-weight: 400;
+               line-height: 1.5;
+               color: #7b8a8b;
+               vertical-align: middle;
+               background: #fff url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e) no-repeat right 0.75rem center/8px 10px;
+               border: 1px solid #ced4da;
+               border-radius: 0.25rem;
+               -webkit-appearance: none;
+               -moz-appearance: none;
+               appearance: none;
+           }
+           div.topbox {
+               background: #FAA050;
+               color: #fff;
+               margin: 0;
+               padding: 1rem 1rem 0 1rem;
+               border-bottom: 5px solid #F33;
+               outline: 3px solid #00F;
+           }
+
+
         </style>
 
 
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
 
-    <body id="{% block body_id %}{% endblock %}">
+    <body>
 
-        {% block header %}
+    <div id="{% block body_id %}{% endblock %}">
+        <div class="container body-container">
+            {% block header %}
             <header>
-                <div class="navbar navbar-light bg-light navbar-static-top navbar-expand-md" role="navigation">
-                    <div class="container"> <a class="navbar-brand" href="{{ path('homepage') }}">
+            <div class="navbar navbar-expand-lg fixed-top navbar-dark topbox">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav mr-auto">
+                            {% set state = '' %}
+                            {% if app.request.pathinfo == path('singles_index') %}
+                                {% set state = 'active' %}
+                            {% endif %}
 
-                            Klik2Match.nl
+                            <li class="nav-item {{ state }}">
+                                <a href="{{ path('singles_index') }}" class="nav-link {{ state }}" >
+                                    <i class="fa fa-user-friends" aria-hidden="true"></i> {{ 'menu.singles'|trans }}
+                                </a>
+                            </li>
 
-                        </a>
-                        <button type="button" class="navbar-toggler"
-                                data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">{{ 'menu.toggle_nav'|trans }}</span>
-                            &#x2630;</button>
-                        <div
-                                class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
+                            {% if app.user %}
 
-                                {% block header_navigation_links %}
-                                    {#<li>
-                                        <a href="{{ path('blog_index') }}">
-                                            <i class="fa fa-home" aria-hidden="true"></i> {{ 'menu.homepage'|trans }}
-                                        </a>
-                                    </li>#}
-                                    {% if not app.user %}
-                                        <li>
-                                            <a href="{{ path('app_register') }}">
-                                                <i class="fa fa-user-plus" aria-hidden="true"></i> {{ 'menu.register'|trans }}
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="{{ path('admin_index') }}">
-                                                <i class="fa fa-user" aria-hidden="true"></i> {{ 'menu.login'|trans }}
-                                            </a>
-                                        </li>
-
-
-                                    {% endif %}
-                                {% endblock %}
-
-                                <li>
-                                    <a href="{{ path('blog_search') }}"> <i class="fa fa-search"></i> {{ 'menu.search'|trans }}</a>
-                                </li>
-
-                                {% if app.user %}
-
-                                    {% if is_granted('ROLE_ADMIN') %}
-                                        <li>
-                                            <a href="{{ path('admin_post_index') }}">
-                                                <i class="fa fa-lock" aria-hidden="true"></i> {{ 'menu.admin'|trans }}
-                                            </a>
-                                        </li>
-                                    {% endif %}
-                                    <li>
-                                        <a href="{{ path('user_edit_main') }}">
-                                            <i class="fa fa-edit" aria-hidden="true"></i> {{ 'menu.user_edit'|trans }}
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="{{ path('security_logout') }}">
-                                            <i class="fa fa-sign-out" aria-hidden="true"></i> {{ 'menu.logout'|trans }}
-                                        </a>
-                                    </li>
-
-
+                            {% set state = '' %}
+                            {% if app.request.pathinfo == path('message_new_list') %}
+                                {% set state = 'active' %}
+                            {% endif %}
+                            <li class="nav-item {{ state }}">
+                                <a href="{{ path('message_new_list') }}" class="nav-link {{ state }}">
+                                    <i class="fa fa-envelope"></i> {{ 'menu.messages'|trans }}
+                                </a>
+                            </li>
+                                {% set state = '' %}
+                                {% if app.request.pathinfo == path('message_new_list') %}
+                                    {% set state = 'active' %}
                                 {% endif %}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" >
+                                    <i class="fa fa-user" aria-hidden="false"></i> {{ 'menu.user_show_meta'|trans }}
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="{{ path('user_show_profile') }}">
+                                        <i class="fa fa-user" aria-hidden="false"></i> {{ 'menu.user_show_profile'|trans }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ path('user_edit_profile') }}">
+                                        <i class="fa fa-address-card" aria-hidden="false"></i> {{ 'menu.user_edit_meta'|trans }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ path('user_edit_album') }}">
+                                        <i class="fa fa-camera" aria-hidden="false"></i> {{ 'menu.user_edit_album'|trans }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ path('user_edit_main') }}">
+                                        <i class="fa fa-id-badge" aria-hidden="false"></i> {{ 'menu.user_edit_main'|trans }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ path('favo_list') }}">
+                                        <i class="fa fa-star" aria-hidden="false"></i> {{ 'menu.favo_list'|trans }}
+                                    </a>
+                                    <a class="dropdown-item" href="{{ path('blocked_list') }}">
+                                        <i class="fa fa-ban" aria-hidden="false"></i> {{ 'menu.blocked_list'|trans }}
+                                    </a>
+                                </div>
+                            </li>
 
-
+                            {% endif %}
                             </ul>
-                        </div>
+                            <ul class="navbar-nav">
+
+                                {% if not app.user %}
+                                <li class="nav-item {{ state }}">
+                                    <a href="{{ path('app_register') }}" class="nav-link {{ state }} ">
+                                        <i class="fa fa-user-plus" aria-hidden="true"></i> {{ 'menu.register'|trans }}
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('security_login') }}" class="nav-link {{ state }} ">
+                                        <i class="fa fa-user" aria-hidden="true"></i> {{ 'menu.login'|trans }}
+                                    </a>
+                                </li>
+                                {% else %}
+                                    <li class="nav-item {{ state }}">
+                                        <a href="{{ path('security_logout') }}" class="nav-link {{ state }} ">
+                                            <i class="fa fa-sign-out-alt" aria-hidden="true"></i> {{ 'menu.logout'|trans }}
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
 
                     </div>
 
                 </div>
-            </header>
-        {% endblock %}
 
-        <div class="container body-container">
-            {% block submenu %}
-                submenu base
+            </div>
+
+
+            </header>
+
+            {% endblock %}
+
+            {{ include('default/_flash_messages.html.twig') }}
+
+           <!--  tabsmenu used mostly at profile and messages  -->
+            {% block tabsmenu %}
             {% endblock %}
 
             {% block body %}
 
                 <div class="row">
-                    <div id="main" class="col-sm-9">
-                        {{ include('default/_flash_messages.html.twig') }}
+                    <div id="main" class="col-md-12">
 
                         {% block main %}
                         {% endblock %}
                     </div>
-
-
                 </div>
             {% endblock %}
-        </div>
+        </div> <!-- end of div body-container -->
+
+
 
         {% block footer %}
             <footer>
@@ -156,13 +214,18 @@
             </footer>
         {% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('js/app') }}
-        {% endblock %}
-
         {# it's not mandatory to set the timezone in localizeddate(). This is done to
            avoid errors when the 'intl' PHP extension is not available and the application
            is forced to use the limited "intl polyfill", which only supports UTC and GMT #}
         <!-- Page rendered on {{ 'now'|localizeddate('long', 'long', null, 'UTC') }} -->
+
+        {% block javascripts %}
+
+            {{ encore_entry_script_tags('js/app') }}
+
+
+        {% endblock %}
+    </div>
     </body>
+
 </html>

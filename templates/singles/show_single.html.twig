@@ -1,0 +1,110 @@
+{% extends 'base.html.twig' %}
+ {% block tabsmenu %}
+
+ {% endblock %}
+
+{% block extracss %}
+    <link rel="stylesheet" href="https://blueimp.github.io/Gallery/css/blueimp-gallery.min.css"/>
+<!--    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+            crossorigin="anonymous"
+    ></script>-->
+{% endblock %}
+
+{% block main %}
+
+<div class="row pb-4">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8">
+        <div class="btn-toolbar col-md-12" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+
+                <a href="{{ path('message_send_new') }}?user={{ user.id  }}" class="btn btn-primary ">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>  {{ 'action.send_message'|trans }}
+                </a>
+
+            </div>
+
+            <div class="btn-group mr-2 " role="group" aria-label="Second group" disabled>
+
+                <a href="{{ path('favo_make') }}?user={{ user.id }}" class="btn btn-primary {% if favo_button_disabled==true %} disabled {% endif %}">
+                    <i class="fa fa-star" aria-hidden="true"></i> {{ 'action.like'|trans }}
+                </a>
+
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+
+                <a href="{{ path('blocked_make') }}?user={{ user.id }}" class="btn btn-primary {% if block_button_disabled==true %} disabled {% endif %}">
+                    <i class="fa fa-ban" aria-hidden="true"></i>  {{ 'action.block'|trans }}
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-8 pb-2">
+        <div class="row list-inline files" data-target="#modal-gallery" data-toggle="modal-gallery">
+            {% if mainPicture.name is defined %}
+                <div class="col-md-6 pb-2">
+                    <div class="thumb">
+                        <a class="thumbnail" download="{{ mainPicture.name }}" data-gallery="gallery" title="{{ mainPicture.name }}" href="{{ mainPicture.url }}">
+                            <img class="img-responsive" src="{{ mainPicture.bignailUrl }}" width="300px"/>
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+            {% if pictures is defined %}
+                <div class="row col-md-6">
+                    {% for foto in pictures %}
+                        <div class="col-lg-6 col-xs-12 thumb">
+                            <a class="thumbnail" download="{{ foto.name }}" data-gallery="gallery" title="{{ foto.name }}" href="{{ foto.url }}">
+                                <img class="img-responsive" src="{{ foto.thumbnailUrl }}" width="100px"/>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+</div>
+<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-filter="">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+    <!-- shared logic -->
+    {{ include('profile_meta_table.html.twig') }}
+
+
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <!-- blueimp Gallery script -->
+    <script src="https://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+
+
+{% endblock %}
+
+
+
+

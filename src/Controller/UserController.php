@@ -13,8 +13,8 @@ namespace App\Controller;
 
 use App\Form\Type\ChangePasswordType;
 use App\Form\UserType;
-use App\Form\ProfielType;
-use App\Entity\Profiel;
+use App\Form\MetaType;
+use App\Entity\Meta;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -62,7 +62,7 @@ class UserController extends AbstractController
      *
      * @return object
      */
-    protected function getProfiel()
+    /*protected function getProfiel()
     {
         $user = $this->getUser();
         $profielId = $user->getId();
@@ -73,7 +73,7 @@ class UserController extends AbstractController
         $profiel = $entityManager->getRepository('ProfielRepository')->find($profielId);
 
         return $profiel;
-    }
+    }*/
 
     /**
      * @Route("/change-password", methods={"GET", "POST"}, name="user_change_password")

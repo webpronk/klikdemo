@@ -1,5 +1,10 @@
 {% extends 'user/usermenu.html.twig' %}
 
+{% block extracss %}
+
+
+{% endblock %}
+
 {% set tab_active = 'main' %}
 
 {% block body_id 'user_edit_profile' %}
@@ -16,14 +21,8 @@
     {{ form_end(form) }}
 {% endblock %}
 
-{% block sidebar %}
-    <div class="section">
-        <a href="{{ path('user_change_password') }}" class="btn btn-lg btn-block btn-danger">
-            <i class="fa fa-lock" aria-hidden="true"></i> {{ 'action.change_password'|trans }}
-        </a>
-    </div>
-
+{% block javascripts %}
     {{ parent() }}
 
-    {{ show_source_code(_self) }}
+
 {% endblock %}
