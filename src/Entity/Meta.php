@@ -203,7 +203,7 @@ class Meta
         return $this->kinderwens;
     }
 
-    public function setKinderwens(string $kinderwens): self
+    public function setKinderwens(?string $kinderwens): self
     {
         $this->kinderwens = $kinderwens;
 
@@ -215,7 +215,7 @@ class Meta
         return $this->kinderen;
     }
 
-    public function setKinderen(string $kinderen): self
+    public function setKinderen(?string $kinderen): self
     {
         $this->kinderen = $kinderen;
 
@@ -227,7 +227,7 @@ class Meta
         return $this->roken;
     }
 
-    public function setRoken(string $roken): self
+    public function setRoken(?string $roken): self
     {
         $this->roken = $roken;
 
@@ -239,7 +239,7 @@ class Meta
         return $this->drugs;
     }
 
-    public function setDrugs(string $drugs): self
+    public function setDrugs(?string $drugs): self
     {
         $this->drugs = $drugs;
 
@@ -251,7 +251,7 @@ class Meta
         return $this->drinken;
     }
 
-    public function setDrinken(string $drinken): self
+    public function setDrinken(?string $drinken): self
     {
         $this->drinken = $drinken;
 
@@ -263,7 +263,7 @@ class Meta
         return $this->vegetarisch;
     }
 
-    public function setVegetarisch(string $vegetarisch): self
+    public function setVegetarisch(?string $vegetarisch): self
     {
         $this->vegetarisch = $vegetarisch;
 

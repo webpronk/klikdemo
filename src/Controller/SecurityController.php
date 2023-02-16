@@ -11,12 +11,17 @@
 
 namespace App\Controller;
 
+use App\Form\Type\ResetPasswordType;
+use App\Repository\UserRepository;
+use App\Repository\UserPasswordResetRepository;
 use Psr\Container\ContainerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
+
 
 /**
  * Controller used to manage the application security.
@@ -50,6 +55,41 @@ class SecurityController extends AbstractController
             'error' => $helper->getLastAuthenticationError(),
         ]);
     }
+
+    /**
+     * @Route("/resetpassword", name="reset_password")
+     */
+    public function resetPassword(UserPasswordResetRepository $resetRepo, UserRepository $userRepo,Request $request): Response
+    {
+        //$user = $this->getUser();
+
+        $string = $request->query->get('string');
+        $resetPasswordEntity = $resetRepo->findOneBy(['reset_token' => $request->query->get('string')]);
+        //$resetPassword = new \App\Entity\UserPasswordReset();
+        //$resetPassword->setResetToken('oijiejd22jjd');
+        $userId = $resetPasswordEntity->getUserId();
+        $userEntity = $userRepo->findOneBy(['id' => $userId]);
+        $userName = $userEntity->getUserName();
+        //var_dump($userEntity->getUserName());
+        //exit;
+
+        $form = $this->createForm(ResetPasswordType::class);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            //$user->setPassword($encoder->encodePassword($user, $form->get('newPassword')->getData()));
+
+            $this->getDoctrine()->getManager()->flush();
+
+            return $this->redirectToRoute('security_logout');
+        }
+
+        return $this->render('user/reset_password.html.twig', [
+            'form' => $form->createView(),
+            'username' => $userName,
+        ]);
+    }
+
 
     /**
      * This is the route the user can use to logout.

@@ -20,6 +20,11 @@
         "/build/js/search.fef0d2ae.js"
       ]
     },
+    "js/messages": {
+      "js": [
+        "/build/js/messages.791dbad1.js"
+      ]
+    },
     "js/searchSingles": {
       "js": [
         "/build/js/searchSingles.c27e6e0f.js"
@@ -42,7 +47,7 @@
     },
     "css/app": {
       "css": [
-        "/build/css/app.6104b7af.css"
+        "/build/css/app.eefa2aac.css"
       ]
     },
     "css/custom": {
@@ -50,9 +55,14 @@
         "/build/css/custom.3affc210.css"
       ]
     },
+    "css/messages": {
+      "css": [
+        "/build/css/messages.7e482ed0.css"
+      ]
+    },
     "css/admin": {
       "css": [
-        "/build/css/admin.938bd957.css"
+        "/build/css/admin.16e8c513.css"
       ]
     }
   }

@@ -5,6 +5,7 @@ parameters:
     # This parameter defines the codes of the locales (languages) enabled in the application
     app_locales: en|fr|de|es|cs|nl|ru|uk|ro|pt_BR|pl|it|ja|id|ca|sl|hr|zh_CN|bg|tr
     app.notifications.email_sender: anonymous@example.com
+    app.registrations.email_sender: anonymous@example.com
 
 services:
     # default configuration for services in *this* file
@@ -32,6 +33,8 @@ services:
     # 'arguments' key and define the arguments just below the service class
     App\EventSubscriber\CommentNotificationSubscriber:
         $sender: '%app.notifications.email_sender%'
+    App\EventSubscriber\RegistrationNotificationSubscriber:
+        $sender: '%app.registrations.email_sender%'
 
     # Image folder
     #App\Service\FileUploader:

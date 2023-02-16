@@ -3,15 +3,14 @@
 {% block tabsmenu %}
     <div>
 
-
         <ul class="nav nav-tabs">
 
             {% set disabled = '' %}
-            {% if tab_active == 'list' %}
-                {% set disabled = 'disabled' %}
+            {% if tab_active == 'message_new_list' %}
+                {% set disabled = 'active disabled' %}
             {% endif %}
 
-            <li class="nav-item ">
+            <li class="nav-item">
                 <a href="{{ path('message_new_list') }}" class="nav-link {{ disabled }}">
                     <i class="fa fa-inbox" aria-hidden="true"></i> {{ 'menu.message_list'|trans }}
                 </a>
@@ -19,7 +18,7 @@
 
             {% set disabled = '' %}
             {% if tab_active == 'message_send_list' %}
-                {% set disabled = 'disabled' %}
+                {% set disabled = 'active disabled' %}
             {% endif %}
 
             <li class="nav-item">

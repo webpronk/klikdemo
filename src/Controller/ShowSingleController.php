@@ -25,6 +25,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
+//use Symfony\Bridge\Twig;
 
 use App\Service\PictureHelper;
 
@@ -82,6 +83,12 @@ class ShowSingleController extends AbstractController
         }
 
         $form->handleRequest($request);
+
+        // In config/packages/dev/swiftmailer.yaml the 'disable_delivery' option is set to 'true'.
+        // That's why in the development environment you won't actually receive any email.
+        // However, you can inspect the contents of those unsent emails using the debug toolbar.
+        // See https://symfony.com/doc/current/email/dev_environment.html#viewing-from-the-web-debug-toolbar
+
 
         return $this->render('singles/show_single.html.twig', [
             'mainPicture' => $mainPicture,

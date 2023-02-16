@@ -95,6 +95,10 @@
                 <source>title.already_in_your_list</source>
                 <target>Deze bestaat al in jouw lijst</target>
             </trans-unit>
+             <trans-unit id="title.reset_password">
+                <source>title.reset_password</source>
+                <target>Pas je wachtwoord aan</target>
+            </trans-unit>
 
             <trans-unit id="action.show">
                 <source>action.show</source>
@@ -336,6 +340,10 @@
              <trans-unit id="menu.user_show_meta">
                 <source>menu.user_show_meta</source>
                 <target>Mijn profiel</target>
+            </trans-unit>
+             <trans-unit id="menu.user_change_password">
+                <source>menu.user_change_password</source>
+                <target>Wachtwoord aanpassen</target>
             </trans-unit>
              <trans-unit id="menu.favo_list">
                 <source>menu.favo_list</source>

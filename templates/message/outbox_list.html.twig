@@ -3,10 +3,20 @@
 {% set tab_active = 'message_send_list' %}
 
 {% block body_id 'message_send_list' %}
+{% block extracss %}
+
+    {{ encore_entry_link_tags('css/messages') }}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('js/messages') }}
+{% endblock %}
 
 {% block main %}
 
-    <table class="table table-striped table-middle-aligned">
+    <table class="table table-striped table-middle-aligned table-hover" >
         <thead>
         <tr>
             <th scope="col">{{ 'label.receiver'|trans }}</th>
@@ -17,7 +27,7 @@
         </thead>
         <tbody>
         {% for message in messages %}
-            <tr>
+            <tr class="clickable-row">
                 <td> <a href="{{ path('message_showsend') }}?id={{ message.id }}"> {{ message.receiver.username }} </a></td>
                 <td> {{ message.messageBody|length > 20? message.messageBody|slice(0, 20) ~ '...' : message.messageBody }}
                 <td> {{ message.creationDate|date('d-m-Y') }}
